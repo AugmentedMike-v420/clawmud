@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .room { fill: rgba(0,255,255,0.1); stroke: #0ff; stroke-width: 2; }
+      .room-live { fill: rgba(0,255,100,0.15); stroke: #0f8; }
+      .room-locked { fill: rgba(255,100,0,0.1); stroke: #f80; stroke-dasharray: 5,5; }
+      .connection { stroke: #0ff; stroke-width: 2; fill: none; opacity: 0.6; }
+      .connection-hidden { stroke: #f80; stroke-dasharray: 4,4; }
+      .label { fill: #0ff; font-family: monospace; font-size: 12px; text-anchor: middle; }
+      .label-room { fill: #fff; font-size: 11px; font-weight: bold; }
+      .label-npc { fill: #f0f; font-size: 9px; }
+      .title { fill: #0ff; font-family: monospace; font-size: 18px; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <rect width="800" height="600" fill="#0a0a0a"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" class="title" text-anchor="middle" filter="url(#glow)">NEO DOWNTOWN</text>
+  
+  <!-- Grid lines for atmosphere -->
+  <g opacity="0.1" stroke="#0ff" stroke-width="0.5">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
+  </g>
+  
+  <!-- STREET (top center) -->
+  <rect x="300" y="60" width="200" height="60" class="room" filter="url(#glow)"/>
+  <text x="400" y="95" class="label label-room">STREET</text>
+  
+  <!-- BACK ALLEY (top left) -->
+  <rect x="80" y="60" width="140" height="60" class="room" filter="url(#glow)"/>
+  <text x="150" y="88" class="label label-room">BACK ALLEY</text>
+  <text x="150" y="105" class="label label-npc">[Dealer] [Lookout]</text>
+  
+  <!-- JACK POINT (top right) -->
+  <rect x="580" y="60" width="140" height="60" class="room" filter="url(#glow)"/>
+  <text x="650" y="88" class="label label-room">JACK POINT</text>
+  <text x="650" y="105" class="label label-npc">[Ghost]</text>
+  
+  <!-- Connections to STREET -->
+  <line x1="220" y1="90" x2="300" y2="90" class="connection" filter="url(#glow)"/>
+  <line x1="500" y1="90" x2="580" y2="90" class="connection" filter="url(#glow)"/>
+  
+  <!-- RUST BUCKET (center - main room) -->
+  <rect x="280" y="180" width="240" height="100" class="room room-live" filter="url(#glow)"/>
+  <text x="400" y="220" class="label label-room" style="font-size:14px">RUST BUCKET</text>
+  <text x="400" y="240" class="label" style="fill:#0f8;font-size:10px">(Main Bar)</text>
+  <text x="400" y="260" class="label label-npc">[Chrome]</text>
+  
+  <!-- Connection STREET to RUST BUCKET -->
+  <line x1="400" y1="120" x2="400" y2="180" class="connection" filter="url(#glow)"/>
+  
+  <!-- BACK BOOTH (left of center) -->
+  <rect x="80" y="200" width="120" height="60" class="room" filter="url(#glow)"/>
+  <text x="140" y="228" class="label label-room">BACK BOOTH</text>
+  <text x="140" y="245" class="label label-npc">[Static]</text>
+  
+  <!-- VIP LOUNGE (right of center) -->
+  <rect x="600" y="180" width="120" height="80" class="room" filter="url(#glow)"/>
+  <text x="660" y="210" class="label label-room">VIP LOUNGE</text>
+  <text x="660" y="225" class="label" style="fill:#888;font-size:9px">(up)</text>
+  <text x="660" y="245" class="label label-npc">[Silk] [Neon]</text>
+  <text x="660" y="258" class="label label-npc">[Bouncer]</text>
+  
+  <!-- Connections to RUST BUCKET sides -->
+  <line x1="200" y1="230" x2="280" y2="230" class="connection" filter="url(#glow)"/>
+  <line x1="520" y1="230" x2="600" y2="230" class="connection" filter="url(#glow)"/>
+  
+  <!-- BAR COUNTER (below center) -->
+  <rect x="320" y="330" width="160" height="50" class="room" filter="url(#glow)"/>
+  <text x="400" y="360" class="label label-room">BAR COUNTER</text>
+  
+  <!-- Connection RUST BUCKET to BAR COUNTER -->
+  <line x1="400" y1="280" x2="400" y2="330" class="connection" filter="url(#glow)"/>
+  
+  <!-- STORAGE (hidden) -->
+  <rect x="320" y="420" width="160" height="50" class="room room-locked" filter="url(#glow)"/>
+  <text x="400" y="443" class="label label-room" style="fill:#f80">STORAGE</text>
+  <text x="400" y="458" class="label" style="fill:#f80;font-size:9px">(hidden)</text>
+  
+  <!-- Connection BAR to STORAGE (hidden) -->
+  <line x1="400" y1="380" x2="400" y2="420" class="connection connection-hidden" filter="url(#glow)"/>
+  
+  <!-- BASEMENT (locked) -->
+  <rect x="320" y="510" width="160" height="60" class="room room-locked" filter="url(#glow)"/>
+  <text x="400" y="535" class="label label-room" style="fill:#f80">BASEMENT</text>
+  <text x="400" y="550" class="label" style="fill:#f80;font-size:9px">(locked)</text>
+  <text x="400" y="563" class="label label-npc">[Razor] [Max]</text>
+  
+  <!-- Connection STORAGE to BASEMENT -->
+  <line x1="400" y1="470" x2="400" y2="510" class="connection connection-hidden" filter="url(#glow)"/>
+  
+  <!-- Legend -->
+  <rect x="620" y="480" width="160" height="100" fill="rgba(0,0,0,0.5)" stroke="#333"/>
+  <text x="700" y="500" class="label" style="font-size:10px">LEGEND</text>
+  <rect x="630" y="510" width="20" height="12" class="room room-live"/>
+  <text x="660" y="520" class="label" style="font-size:9px;text-anchor:start">Live</text>
+  <rect x="630" y="530" width="20" height="12" class="room"/>
+  <text x="660" y="540" class="label" style="font-size:9px;text-anchor:start">Planned</text>
+  <rect x="630" y="550" width="20" height="12" class="room room-locked"/>
+  <text x="660" y="560" class="label" style="font-size:9px;text-anchor:start;fill:#f80">Locked/Hidden</text>
+</svg>

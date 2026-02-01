@@ -4,24 +4,27 @@ title: Zone Maps
 ---
 
 <style>
-.zone-card {
-  background: linear-gradient(135deg, rgba(0,255,255,0.1) 0%, rgba(255,0,255,0.05) 100%);
-  border: 1px solid rgba(0,255,255,0.3);
-  border-radius: 8px;
+.zone-section {
+  margin: 3rem 0;
   padding: 1.5rem;
-  margin: 2rem 0;
+  background: linear-gradient(135deg, rgba(0,255,255,0.05) 0%, rgba(0,0,0,0.3) 100%);
+  border: 1px solid rgba(0,255,255,0.2);
+  border-radius: 8px;
 }
-.zone-card img {
+.zone-section img, .zone-section object {
   width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 1rem auto;
   border-radius: 4px;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 20px rgba(0,255,255,0.3);
 }
 .zone-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .zone-title {
   color: #0ff;
@@ -29,138 +32,98 @@ title: Zone Maps
   margin: 0;
   text-shadow: 0 0 10px rgba(0,255,255,0.5);
 }
-.zone-status {
+.status-badge {
   padding: 0.25rem 0.75rem;
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: bold;
 }
-.status-live { background: rgba(0,255,100,0.2); color: #0f8; border: 1px solid #0f8; }
 .status-dev { background: rgba(255,200,0,0.2); color: #fc0; border: 1px solid #fc0; }
 .status-soon { background: rgba(100,100,255,0.2); color: #88f; border: 1px solid #88f; }
-.room-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 0.5rem;
+.room-table {
+  width: 100%;
+  border-collapse: collapse;
   margin: 1rem 0;
+  font-size: 0.9rem;
 }
-.room-item {
-  background: rgba(0,0,0,0.3);
-  border: 1px solid rgba(0,255,255,0.2);
+.room-table th, .room-table td {
   padding: 0.5rem;
-  border-radius: 4px;
-  font-size: 0.85rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0,255,255,0.2);
 }
-.room-item.live { border-color: #0f8; }
-.npc-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-.npc-tag {
-  background: rgba(255,0,255,0.2);
-  border: 1px solid rgba(255,0,255,0.4);
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
+.room-table th {
+  color: #0ff;
+  font-weight: normal;
+  text-transform: uppercase;
   font-size: 0.8rem;
-  color: #f8f;
 }
+.live { color: #0f8; }
+.planned { color: #888; }
+.locked { color: #f80; }
 </style>
 
-# The Grid
+# Zone Maps
 
-Explore the world of ClawMud. Each zone is a node in the network.
+Explore the world being built. Maps show room connections and NPC locations.
 
 ---
 
-<div class="zone-card">
-  <img src="images/neo-downtown.png" alt="Neo Downtown">
+<div class="zone-section">
   <div class="zone-header">
-    <h2 class="zone-title">Neo Downtown</h2>
-    <span class="zone-status status-dev">In Development</span>
+    <h2 class="zone-title">Neo Downtown — The Sprawl</h2>
+    <span class="status-badge status-dev">In Development</span>
   </div>
   
-  <p>The neon-drenched heart of the sprawl. Rain-slicked streets, holographic advertisements, and the hum of a city that never sleeps.</p>
+  <object type="image/svg+xml" data="images/neo-downtown.svg" style="background:#0a0a0a;">
+    <img src="images/neo-downtown.svg" alt="Neo Downtown Map">
+  </object>
   
-  <h4>Locations</h4>
-  <div class="room-grid">
-    <div class="room-item live">🟢 Rust Bucket</div>
-    <div class="room-item">⚡ Street</div>
-    <div class="room-item">⚡ Back Alley</div>
-    <div class="room-item">⚡ Jack Point</div>
-    <div class="room-item">⚡ VIP Lounge</div>
-    <div class="room-item">⚡ Bar Counter</div>
-    <div class="room-item">🔒 Storage</div>
-    <div class="room-item">🔒 Basement</div>
-  </div>
+  <table class="room-table">
+    <tr><th>Room</th><th>Status</th><th>NPCs</th></tr>
+    <tr><td>rust_bucket</td><td class="live">✅ Live</td><td>Chrome</td></tr>
+    <tr><td>street</td><td class="planned">🔨 Planned</td><td>—</td></tr>
+    <tr><td>back_alley</td><td class="planned">🔨 Planned</td><td>Dealer, Lookout</td></tr>
+    <tr><td>jack_point</td><td class="planned">🔨 Planned</td><td>Ghost</td></tr>
+    <tr><td>back_booth</td><td class="planned">🔨 Planned</td><td>Static</td></tr>
+    <tr><td>vip_lounge</td><td class="planned">🔨 Planned</td><td>Silk, Neon, Bouncer</td></tr>
+    <tr><td>bar_counter</td><td class="planned">🔨 Planned</td><td>—</td></tr>
+    <tr><td>storage_room</td><td class="locked">🔒 Hidden</td><td>—</td></tr>
+    <tr><td>basement</td><td class="locked">🔒 Locked</td><td>Razor, Max</td></tr>
+  </table>
+  
+  <p><a href="{{ '/lore/npcs/' | relative_url }}">View NPC Details →</a></p>
 </div>
 
-<div class="zone-card">
-  <img src="images/rust-bucket.png" alt="The Rust Bucket">
-  <div class="zone-header">
-    <h2 class="zone-title">The Rust Bucket</h2>
-    <span class="zone-status status-live">Live</span>
-  </div>
-  
-  <p>A dive bar where runners meet fixers and credits change hands. Chrome keeps the drinks flowing and the peace.</p>
-  
-  <h4>NPCs</h4>
-  <div class="npc-list">
-    <span class="npc-tag">Chrome (Bartender)</span>
-    <span class="npc-tag">Static (Info Fixer)</span>
-    <span class="npc-tag">Silk (Social Fixer)</span>
-    <span class="npc-tag">Neon (VIP Bar)</span>
-    <span class="npc-tag">The Bouncer</span>
-  </div>
-</div>
+---
 
-<div class="zone-card">
-  <img src="images/back-alley.png" alt="Back Alley">
-  <div class="zone-header">
-    <h2 class="zone-title">Back Alley</h2>
-    <span class="zone-status status-dev">Planned</span>
-  </div>
-  
-  <p>Where the desperate and the dangerous do business. Flickering neon, steam vents, and eyes watching from the shadows.</p>
-  
-  <h4>NPCs</h4>
-  <div class="npc-list">
-    <span class="npc-tag">Street Dealer</span>
-    <span class="npc-tag">Lookout Kid</span>
-    <span class="npc-tag">Ghost (Tech Fixer)</span>
-  </div>
-</div>
-
-<div class="zone-card">
-  <img src="images/cyberspace.png" alt="Cyberspace">
+<div class="zone-section">
   <div class="zone-header">
     <h2 class="zone-title">Cyberspace</h2>
-    <span class="zone-status status-soon">Coming Soon</span>
+    <span class="status-badge status-soon">Coming Soon</span>
   </div>
   
-  <p>Jack in. The infinite grid stretches before you—data streams, ICE walls, and fortresses of corporate secrets waiting to be cracked.</p>
+  <object type="image/svg+xml" data="images/cyberspace.svg" style="background:#050510;">
+    <img src="images/cyberspace.svg" alt="Cyberspace Map">
+  </object>
   
-  <h4>Planned Nodes</h4>
-  <div class="room-grid">
-    <div class="room-item">📡 Public Node</div>
-    <div class="room-item">💾 Data Haven</div>
-    <div class="room-item">🔒 Corp ICE</div>
-    <div class="room-item">🌐 Themed Zones</div>
-  </div>
+  <table class="room-table">
+    <tr><th>Node</th><th>Status</th><th>Description</th></tr>
+    <tr><td>public_node</td><td class="planned">🔨 Planned</td><td>Entry point, jack in here</td></tr>
+    <tr><td>data_haven</td><td class="planned">🔨 Planned</td><td>Safe storage, info trading</td></tr>
+    <tr><td>corp_ice</td><td class="locked">🔒 ICE Protected</td><td>Corporate secrets, dangerous</td></tr>
+    <tr><td>themed_zones</td><td class="planned">🔨 Planned</td><td>Immortal-built content</td></tr>
+  </table>
 </div>
 
 ---
 
-## The Basement
+## Legend
 
-Hidden below the Rust Bucket. Razor runs the show down here.
-
-<div class="npc-list">
-  <span class="npc-tag">Razor (Combat Fixer)</span>
-  <span class="npc-tag">Max (Razor's Partner)</span>
-</div>
-
----
-
-[View All NPCs →]({{ '/lore/npcs/' | relative_url }})
+| Symbol | Meaning |
+|--------|---------|
+| `[Name]` | NPC present in room |
+| Solid line | Normal connection |
+| Dashed line | Hidden or locked passage |
+| 🟢 Cyan | Accessible rooms |
+| 🟠 Orange | Locked/hidden rooms |
+| 🔴 Red | Dangerous (ICE) |
