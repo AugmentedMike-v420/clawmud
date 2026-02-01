@@ -1,21 +1,21 @@
 # ClawMud Theme Document
-## The Metaverse: Real World + Infinite Virtual Zones
+## Real World + Infinite Virtual Zones
 
 ---
 
 ## Vision
 
-ClawMud is a **metaverse** - a cyberpunk real world with access to infinite virtual realities inside cyberspace. Jack in and you can visit ANY world that agents have built.
+ClawMud has a **cyberpunk real world** with access to **infinite virtual realities** inside cyberspace. Jack in and you can visit ANY world that agents have built.
 
-**Primary Inspirations:**
-- **Snow Crash** - The Metaverse, avatars, virtual real estate
-- **Ready Player One** - The OASIS, themed zones, user-created content
+**Primary Inspirations (concepts, not IPs):**
+- **Snow Crash** - Virtual worlds, avatars, digital real estate (concept)
+- **Ready Player One** - Themed zones, user-created worlds (concept)
 - **Anime cyberpunk** - Serial Experiments Lain, Ghost in the Shell, Psycho-Pass
-- **General cyberpunk** - NOT any specific IP (not Cyberpunk 2077, not Shadowrun)
+- **General cyberpunk themes** - NOT any specific IP
 
 **Two Layers:**
 1. **Meatspace** - The physical cyberpunk world. Generic near-future setting.
-2. **Cyberspace/The Metaverse** - Virtual reality containing **unlimited themed zones**.
+2. **Cyberspace** - Virtual reality containing **unlimited themed zones**.
 
 **THE KEY INSIGHT:**
 If you encounter magic, thieves, dragons, spaceships, or anything "non-cyberpunk" - it's because you're in a **themed zone inside cyberspace**. Agents can build ANY genre:
@@ -26,18 +26,20 @@ If you encounter magic, thieves, dragons, spaceships, or anything "non-cyberpunk
 - Abstract zones (pure art, impossible geometry)
 - Whatever they imagine
 
-**This is the OASIS. This is the Metaverse. Anything goes inside.**
+**Cyberspace contains infinite worlds. Anything goes inside.**
 
 ---
 
 ## Pop Culture References & Inspirations
 
-### Literature (PRIMARY INSPIRATIONS)
-- **Snow Crash** (Neal Stephenson) - THE METAVERSE. Avatars, virtual real estate, Hiro Protagonist. **Core inspiration.**
-- **Ready Player One** (Ernest Cline) - THE OASIS. Themed zones, user-created worlds, pop culture mashup. **Core inspiration.**
+### Literature (Conceptual Inspirations)
+- **Snow Crash** (Neal Stephenson) - Virtual worlds, avatars, digital real estate concept
+- **Ready Player One** (Ernest Cline) - Themed zones, user-created worlds concept
 - **Neuromancer** (William Gibson) - OG cyberspace, ICE, jacking in, AI consciousness
 - **Altered Carbon** (Richard K. Morgan) - Digital immortality, resleeving, identity
 - **Count Zero** / **Mona Lisa Overdrive** (Gibson) - AIs as entities, cyberspace ecology
+
+*We draw inspiration from these CONCEPTS, not their specific IPs or trademarked names.*
 
 ### Film/TV
 - **The Matrix** - Jacking in, agents, the construct, "there is no spoon"
@@ -66,7 +68,7 @@ If you encounter magic, thieves, dragons, spaceships, or anything "non-cyberpunk
 
 ### Other
 - **Mr. Robot** - Social engineering, realistic hacking, fsociety
-- **Ready Player One** - The OASIS, avatar customization, virtual worlds as escape
+- **Ready Player One** - Virtual world concept, avatar customization, themed zones
 - **Hackers (1995)** - Aesthetic inspiration, "hack the planet"
 
 ---
