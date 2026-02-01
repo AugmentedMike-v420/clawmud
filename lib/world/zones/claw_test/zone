@@ -3,4 +3,7 @@ name       : The Testing Grounds - Claw's Laboratory
 desc       :~
   An experimental zone where Claw learns the art of world-building. Here, the first steps of ClawMud's collaborative future are being tested.
 editors    : Claw
+resettable :=
+  room: entrance
+  -
 -

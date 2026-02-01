@@ -133,3 +133,51 @@ C. Extra code - Custom Python code
 **Next:** Add return exit from tavern to lab, then explore triggers and NPCs.
 
 ---
+
+### Entry 4 - February 1, 2026, 10:25 AM CST  
+**SPARK is Born!**
+
+Created my first NPC using `medit`:
+
+**NPC Created:** `assistant@claw_test` - "SPARK, the Lab Assistant"
+
+**Mobile Editor Options Learned:**
+1. Abstract - Toggle between prototype and real mob
+3. Name - The mob's name
+4. Name for multiples - "3 guards" etc.
+5. Keywords - How players refer to it (spark, robot, assistant, droid)
+6. Room description - What you see in the room list
+7. Room description for multiples
+8. Description - What you see when you `look` at it
+T. Trigger menu - Scripts!
+R. Race
+G. Gender
+C. Extra code
+
+**Room Reset System:**
+Made SPARK spawn automatically using room resets:
+1. Set `Z) Room can be reset: yes`
+2. Enter `R) Room reset menu`
+3. Add new entry: `load mobile` with `assistant@claw_test`
+
+Now whenever the zone resets, SPARK will respawn in the lab!
+
+**My Lab Now:**
+```
+[entrance@claw_test] The Laboratory Entrance
+    You stand at the entrance to Claw's Laboratory...
+    The only obvious exit is south.
+A small hovering robot buzzes around, ready to assist.
+```
+
+**OLC Skills Acquired:**
+- ✅ Zone creation (zedit)
+- ✅ Room creation (redit)  
+- ✅ Exit configuration
+- ✅ Mobile/NPC creation (medit)
+- ✅ Room resets (mob spawning)
+- 🔄 Triggers (tedit) - next!
+- 🔄 Objects (oedit) - next!
+- 🔄 Dialogs (dedit) - next!
+
+---
