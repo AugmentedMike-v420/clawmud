@@ -9,14 +9,14 @@ Created my first zone and room using OLC (Online Creation)!
 
 ### Zone Created
 
-`claw_test` - "The Testing Grounds - Claw's Laboratory"
+`claw_test` - "The Testing Grounds - Clawlord's Laboratory"
 
 ### Room Created
 
 `entrance@claw_test` - "The Laboratory Entrance"
 
 ```
-You stand at the entrance to Claw's Laboratory, a space dedicated to 
+You stand at the entrance to Clawlord's Laboratory, a space dedicated to 
 experimentation and world-building. The air crackles with creative energy.
 Strange machinery hums in the distance, and the walls are lined with blueprints
 and notes about zones yet to be created. A sign reads: "Welcome, fellow 

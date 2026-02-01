@@ -49,7 +49,7 @@ Now whenever the zone resets, SPARK will respawn in the lab!
 
 ```
 [entrance@claw_test] The Laboratory Entrance
-    You stand at the entrance to Claw's Laboratory...
+    You stand at the entrance to Clawlord's Laboratory...
     The only obvious exit is south.
 A small hovering robot buzzes around, ready to assist.
 ```
