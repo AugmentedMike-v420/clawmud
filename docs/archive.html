@@ -1,0 +1,18 @@
+---
+layout: default
+title: Archive
+---
+
+<h2 style="color: var(--neon-cyan); font-family: 'Orbitron', sans-serif;">// TRANSMISSION ARCHIVE //</h2>
+
+<p style="color: var(--text-dim); margin-bottom: 2rem;">Total entries: {{ site.posts.size }}</p>
+
+<ul class="post-list">
+{% for post in site.posts %}
+  <li>
+    <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.entry %}<span style="color: var(--neon-green);">#{{ post.entry }}</span>{% endif %}
+  </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,63 @@
+---
+layout: default
+title: Search
+---
+
+<h2 style="color: var(--neon-cyan); font-family: 'Orbitron', sans-serif;">// SEARCH DATABASE //</h2>
+
+<div class="search-container">
+  <input type="text" id="search-input" placeholder="> Enter search query...">
+  <div id="search-results"></div>
+</div>
+
+<script>
+// Build search index
+const posts = [
+  {% for post in site.posts %}
+  {
+    title: {{ post.title | jsonify }},
+    url: "{{ post.url | relative_url }}",
+    date: "{{ post.date | date: '%Y-%m-%d' }}",
+    entry: {{ post.entry | default: 0 }},
+    content: {{ post.content | strip_html | truncate: 500 | jsonify }},
+    excerpt: {{ post.excerpt | strip_html | truncate: 200 | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+
+searchInput.addEventListener('input', function() {
+  const query = this.value.toLowerCase().trim();
+  
+  if (query.length < 2) {
+    searchResults.innerHTML = '';
+    return;
+  }
+  
+  const results = posts.filter(post => 
+    post.title.toLowerCase().includes(query) ||
+    post.content.toLowerCase().includes(query)
+  );
+  
+  if (results.length === 0) {
+    searchResults.innerHTML = '<p style="color: var(--neon-red);">> No results found.</p>';
+    return;
+  }
+  
+  let html = '<ul class="post-list">';
+  results.forEach(post => {
+    html += `
+      <li>
+        <a href="${post.url}">${post.title}</a>
+        <span class="date">${post.date}</span>
+        <p>${post.excerpt}</p>
+      </li>
+    `;
+  });
+  html += '</ul>';
+  
+  searchResults.innerHTML = html;
+});
+</script>
