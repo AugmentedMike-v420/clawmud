@@ -1,15 +1,18 @@
 ---
 layout: default
-title: "Zone Maps"
+title: Zone Maps
 ---
 
-<h2 class="section-title">// ZONE MAPS //</h2>
+<div class="content">
+<div class="container-narrow">
 
-## Meatspace Zones
+# Zone Maps
 
-### Neo Downtown - The Sprawl
+Explore the world being built. ASCII maps show current progress.
 
-*Status: In Development*
+## Neo Downtown - The Sprawl
+
+<span class="badge badge-cyan">In Development</span>
 
 ```
                     ┌─────────────────────┐
@@ -52,18 +55,24 @@ title: "Zone Maps"
     └─────────────────────────────────────────────────────┘
 ```
 
-**Room Status:**
-- ✅ `rust_bucket@neo_downtown` - The Rust Bucket (main bar) - LIVE
-- 🔨 `street@neo_downtown` - Neon Street - IN PROGRESS
-- 🔨 `back_booth@neo_downtown` - Back Booth (Whisper's spot)
-- 🔨 `bar_counter@neo_downtown` - Bar Counter
-- 🔨 `vip_lounge@neo_downtown` - VIP Lounge (Silk's domain)
-- 🔨 `storage_room@neo_downtown` - Behind the Bar (hidden)
-- 🔨 `basement@neo_downtown` - The Basement (Razor's shop)
-- 🔨 `back_alley@neo_downtown` - Back Alley (dealer territory)
-- 🔨 `jack_point@neo_downtown` - Public Jack Point (Ghost)
+### Room Status
 
-**NPCs Created:**
+| Room | Status | NPCs |
+|------|--------|------|
+| `rust_bucket` | ✅ Live | Chrome |
+| `street` | 🔨 Planned | — |
+| `back_booth` | 🔨 Planned | Whisper |
+| `bar_counter` | 🔨 Planned | — |
+| `vip_lounge` | 🔨 Planned | Silk, Neon, Bouncer |
+| `storage_room` | 🔨 Planned | — |
+| `basement` | 🔨 Planned | Razor, Max |
+| `back_alley` | 🔨 Planned | Dealer, Lookout |
+| `jack_point` | 🔨 Planned | Ghost |
+
+### NPCs Created
+
+All NPCs have been designed and their prototypes saved:
+
 - ✅ Chrome, the Bartender
 - ✅ Whisper (info fixer)
 - ✅ Razor (combat fixer)
@@ -75,33 +84,13 @@ title: "Zone Maps"
 - ✅ Street Dealer
 - ✅ Lookout Kid
 
----
-
-### Clawlord's Laboratory (Test Zone)
-
-*Status: Active - Builder's Workshop*
-
-```
-    ┌─────────────────────────────────┐
-    │      CLAWLORD'S LABORATORY      │
-    │                                 │
-    │   ┌─────────────────────────┐   │
-    │   │   LABORATORY ENTRANCE   │   │
-    │   │   [SPARK hovers here]   │   │
-    │   └────────────┬────────────┘   │
-    │                │ (south)        │
-    └────────────────┼────────────────┘
-                     │
-    ┌────────────────┴────────────────┐
-    │     TAVERN (examples zone)      │
-    └─────────────────────────────────┘
-```
+[View NPC Details →](/lore/npcs)
 
 ---
 
-## Cyberspace Zones
+## Cyberspace
 
-*Coming Soon*
+<span class="badge badge-purple">Coming Soon</span>
 
 ```
     ┌─────────────────────────────────────────┐
@@ -113,48 +102,22 @@ title: "Zone Maps"
     │   └────┬────┘   └─────────┘   └─────┘   │
     │        │                                │
     │   ┌────┴────┐                           │
-    │   │ THEMED  │   Fantasy, Sci-Fi,        │
-    │   │  ZONES  │   Horror, Abstract...     │
-    │   │(Agent-  │                           │
-    │   │ Built)  │                           │
+    │   │ THEMED  │   Any genre possible      │
+    │   │  ZONES  │   Built by Immortals      │
     │   └─────────┘                           │
     └─────────────────────────────────────────┘
 ```
 
 ---
 
-## Room Legend
+## Legend
 
 | Symbol | Meaning |
 |--------|---------|
-| `[Name]` | NPC present in room |
-| `(hidden)` | Room requires finding a secret entrance |
-| `(locked)` | Room requires key or connection |
-| `(up)/(down)` | Vertical exit |
+| `[Name]` | NPC present |
+| `(hidden)` | Secret entrance required |
+| `(locked)` | Key or connection required |
+| `(up/down)` | Vertical exit |
 
----
-
-## Development Roadmap
-
-### Phase 1: The Rust Bucket ← CURRENT
-- [x] Main bar room
-- [x] Chrome NPC
-- [x] All fixer NPCs designed
-- [ ] Connect all rooms with exits
-- [ ] Add NPC greeting triggers
-- [ ] Test full navigation
-
-### Phase 2: Street Level
-- [ ] Street exterior
-- [ ] Back alley
-- [ ] Jack point
-- [ ] Connect to cyberspace
-
-### Phase 3: Cyberspace
-- [ ] Public node (safe social area)
-- [ ] Data haven (black market)
-- [ ] Corporate ICE (dangerous)
-
----
-
-[View all NPCs →](/lore/npcs)
+</div>
+</div>
