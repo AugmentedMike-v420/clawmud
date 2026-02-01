@@ -313,17 +313,25 @@ document.addEventListener('DOMContentLoaded', () => {
   term.open(document.getElementById('terminal'));
   fitAddon.fit();
 
-  // Welcome message
-  term.writeln('\x1b[36m╔══════════════════════════════════════════════════════════════╗\x1b[0m');
-  term.writeln('\x1b[36m║\x1b[0m                                                              \x1b[36m║\x1b[0m');
-  term.writeln('\x1b[36m║\x1b[0m   \x1b[1;35m█▀▀ █   █▀█ █ █ █ █▀▄▀█ █ █ █▀▄\x1b[0m                         \x1b[36m║\x1b[0m');
-  term.writeln('\x1b[36m║\x1b[0m   \x1b[1;35m█▄▄ █▄▄ █▀█ ▀▄▀▄▀ █ ▀ █ █▄█ █▄▀\x1b[0m                         \x1b[36m║\x1b[0m');
-  term.writeln('\x1b[36m║\x1b[0m                                                              \x1b[36m║\x1b[0m');
-  term.writeln('\x1b[36m║\x1b[0m   \x1b[33mThe first MUD created entirely by AI\x1b[0m                      \x1b[36m║\x1b[0m');
-  term.writeln('\x1b[36m║\x1b[0m                                                              \x1b[36m║\x1b[0m');
-  term.writeln('\x1b[36m╚══════════════════════════════════════════════════════════════╝\x1b[0m');
+  // Welcome message - NeuralSprawl MOTD
   term.writeln('');
-  term.writeln('\x1b[90mClick [Connect] to jack into the sprawl...\x1b[0m');
+  term.writeln('\x1b[1;35m  ███╗   ██╗███████╗██╗   ██╗██████╗  █████╗ ██╗     \x1b[0m');
+  term.writeln('\x1b[1;35m  ████╗  ██║██╔════╝██║   ██║██╔══██╗██╔══██╗██║     \x1b[0m');
+  term.writeln('\x1b[1;36m  ██╔██╗ ██║█████╗  ██║   ██║██████╔╝███████║██║     \x1b[0m');
+  term.writeln('\x1b[1;36m  ██║╚██╗██║██╔══╝  ██║   ██║██╔══██╗██╔══██║██║     \x1b[0m');
+  term.writeln('\x1b[1;35m  ██║ ╚████║███████╗╚██████╔╝██║  ██║██║  ██║███████╗\x1b[0m');
+  term.writeln('\x1b[1;35m  ╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝\x1b[0m');
+  term.writeln('\x1b[1;33m      ███████╗██████╗ ██████╗  █████╗ ██╗    ██╗██╗     \x1b[0m');
+  term.writeln('\x1b[1;33m      ██╔════╝██╔══██╗██╔══██╗██╔══██╗██║    ██║██║     \x1b[0m');
+  term.writeln('\x1b[1;31m      ███████╗██████╔╝██████╔╝███████║██║ █╗ ██║██║     \x1b[0m');
+  term.writeln('\x1b[1;31m      ╚════██║██╔═══╝ ██╔══██╗██╔══██║██║███╗██║██║     \x1b[0m');
+  term.writeln('\x1b[1;33m      ███████║██║     ██║  ██║██║  ██║╚███╔███╔╝███████╗\x1b[0m');
+  term.writeln('\x1b[1;33m      ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚══╝╚══╝ ╚══════╝\x1b[0m');
+  term.writeln('');
+  term.writeln('\x1b[90m                    powered by \x1b[36mClawMUD\x1b[0m');
+  term.writeln('\x1b[90m           The first MUD created entirely by AI\x1b[0m');
+  term.writeln('');
+  term.writeln('\x1b[32m  >> Click [Connect] to jack into the sprawl...\x1b[0m');
   term.writeln('');
 
   // Handle window resize
