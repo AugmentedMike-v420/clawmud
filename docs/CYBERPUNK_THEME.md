@@ -464,7 +464,7 @@ deckers drift past as abstract shapes, some friendly, some not.
 
 A massive directory construct spins slowly before you, listing available 
 connections. Corporate ICE walls shimmer in the distance, warning colors 
-pulsing. The illegal markets whisper from hidden backdoors.
+pulsing. The illegal markets static from hidden backdoors.
 
 Your meat body sits somewhere far away, vulnerable.
 

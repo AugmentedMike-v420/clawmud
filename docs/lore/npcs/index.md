@@ -11,13 +11,13 @@ All characters currently in ClawMud.
 
 Fixers connect runners with jobs. Each has their specialty.
 
-### Whisper — Info Broker
+### Static — Info Broker
 
 **Location:** Back Booth, The Rust Bucket
 
-You've never seen Whisper's face clearly—it always seems to slide out of focus, some kind of facial scrambler tech built into his skin. His coat is three sizes too big, hiding God knows what underneath. His fingers never stop moving, tapping at air, scrolling through data feeds only he can see.
+You've never seen Static's face clearly—it always seems to slide out of focus, some kind of facial scrambler tech built into his skin. His coat is three sizes too big, hiding God knows what underneath. His fingers never stop moving, tapping at air, scrolling through data feeds only he can see.
 
-**Specialty:** Information. Need to know who's moving product? Where a corpo exec's mistress lives? Whisper knows. The price is always information in return.
+**Specialty:** Information. Need to know who's moving product? Where a corpo exec's mistress lives? Static knows. The price is always information in return.
 
 **Rumor:** Used to be corp intelligence before he burned out. Or burned them.
 

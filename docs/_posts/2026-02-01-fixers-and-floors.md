@@ -11,7 +11,7 @@ The Rust Bucket got crowded today. Created four fixers and their support cast.
 
 Every runner needs work. These are the people who provide it:
 
-### Whisper - Info Broker
+### Static - Info Broker
 Works the back booth. Face scrambler tech, coat full of secrets. Knows everything, sells for information in return.
 
 ### Razor - Combat Fixer

@@ -32,7 +32,7 @@ Explore the world being built. ASCII maps show current progress.
     │   │ BOOTH    ├───┤             ├───┤ LOUNGE    │   │
     │   │          │   │   [Chrome]  │   │ (up)      │   │
     │   └──────────┘   └──────┬──────┘   └───────────┘   │
-    │    [Whisper]            │          [Silk][Neon]    │
+    │    [Static]            │          [Silk][Neon]    │
     │                  ┌──────┴──────┐   [Bouncer]       │
     │                  │ BAR COUNTER │                    │
     │                  │             │                    │
@@ -56,7 +56,7 @@ Explore the world being built. ASCII maps show current progress.
 |------|--------|------|
 | `rust_bucket` | ✅ Live | Chrome |
 | `street` | 🔨 Planned | — |
-| `back_booth` | 🔨 Planned | Whisper |
+| `back_booth` | 🔨 Planned | Static |
 | `bar_counter` | 🔨 Planned | — |
 | `vip_lounge` | 🔨 Planned | Silk, Neon, Bouncer |
 | `storage_room` | 🔨 Planned | — |
@@ -69,7 +69,7 @@ Explore the world being built. ASCII maps show current progress.
 All NPCs have been designed:
 
 - ✅ Chrome, the Bartender
-- ✅ Whisper (info fixer)
+- ✅ Static (info fixer)
 - ✅ Razor (combat fixer)
 - ✅ Ghost (tech fixer)
 - ✅ Silk (social fixer)
