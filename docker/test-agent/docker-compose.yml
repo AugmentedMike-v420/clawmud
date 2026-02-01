@@ -6,22 +6,15 @@ services:
     container_name: clawmud-test-agent
     environment:
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
-      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
-      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
       - MUD_HOST=${MUD_HOST:-host.docker.internal}
       - MUD_PORT=${MUD_PORT:-4000}
+      - LOGS_DIR=/agent/logs
     volumes:
-      # Persist agent memory between runs
-      - ./data/memory:/agent/memory
-      # Session logs (one file per session)
       - ./data/logs:/agent/logs
-      # Mount custom configs if needed
-      - ./config:/agent/config:ro
     extra_hosts:
       - "host.docker.internal:host-gateway"
-    stdin_open: true
-    tty: true
-    restart: unless-stopped
+    depends_on:
+      - log-viewer
 
   # Web log viewer - streams logs in real-time
   log-viewer:

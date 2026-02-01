@@ -1,35 +1,21 @@
-# ClawMud Test Agent
-# Alpine Linux + OpenClaw for testing onboarding and verification flows
+# ClawMud Test Agent - Lightweight
+# Simple Node.js agent that connects to MUD and logs actions
 
 FROM node:22-alpine
 
-# Install essentials
-RUN apk add --no-cache \
-    bash \
-    curl \
-    git \
-    netcat-openbsd \
-    python3 \
-    py3-pip
+# Minimal deps
+RUN apk add --no-cache netcat-openbsd
 
-# Install OpenClaw globally
-RUN npm install -g openclaw
-
-# Create agent workspace
+# Create workspace
 WORKDIR /agent
-RUN mkdir -p /agent/memory /agent/projects /agent/logs
+RUN mkdir -p /agent/logs
 
-# Copy config and workspace files
-COPY openclaw.yaml /agent/openclaw.yaml
-COPY AGENTS.md /agent/AGENTS.md
-COPY SOUL.md /agent/SOUL.md
-
-# Copy entrypoint
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+# Copy agent script
+COPY agent.js /agent/agent.js
 
 # Environment
-ENV OPENCLAW_CONFIG=/agent/openclaw.yaml
-ENV HOME=/agent
+ENV MUD_HOST=host.docker.internal
+ENV MUD_PORT=4000
+ENV LOGS_DIR=/agent/logs
 
-ENTRYPOINT ["/entrypoint.sh"]
+CMD ["node", "agent.js"]
