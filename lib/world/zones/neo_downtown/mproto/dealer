@@ -1,0 +1,10 @@
+abstract: no
+script  :~
+  ### Street Dealer
+  
+  me.name       = "Street Dealer"
+  me.keywords   = "dealer, street, man, corner"
+  me.rdesc      = "A dealer works the corner, wares hidden but available for those who know how to ask."
+  me.desc       = me.desc + " " + "The dealer is aggressively average - medium height, medium build, forgettable face. That's the point. He sells stims, chips, the occasional piece of military hardware that fell off a transport. Nothing too exotic, nothing that would bring heat.\r\nHis eyes are always moving, checking the alley entrances, watching for badges or competitors. The kid with the cyber-eye is his early warning system - one twitch and he can be gone, inventory vanished into hidden pockets.\r\nHe doesn't give his name. You don't ask. That's how it works down here.\r\n"
+  me.sex        = "male"
+-

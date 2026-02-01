@@ -1,0 +1,18 @@
+abstract: no
+script  :~
+  ### Neo Downtown - Jack Point
+  
+  me.name       = "Public Jack Point"
+  me.terrain    = "City"
+  me.desc       = me.desc + " " + "A converted phone booth - remember those? - now serves as a public access point to cyberspace. The booth is covered in graffiti, stickers for underground decks, and warnings about ICE in corporate systems. A holographic sign flickers: 'JACK IN - 5 CRED/HR - NO ILLEGAL ACTIVITY (wink wink)'.\r\nInside the booth, a padded seat faces a neural interface jack. The hardware is old but maintained - someone keeps this place running, probably for a cut of whatever gets moved through it. You can see the faint traces of old blood on the seat. Sometimes jacking in goes wrong. Sometimes it goes very wrong.\r\n"
+  
+  me.edesc("booth, phone", "A relic of another age, repurposed for the digital frontier.\r\n")
+  me.edesc("graffiti, stickers", "Tags, ads for black market decks, warnings about corporate ICE.\r\n")
+  me.edesc("sign, holographic", "'JACK IN - 5 CRED/HR - NO ILLEGAL ACTIVITY'. The parenthetical wink is literally animated.\r\n")
+  me.edesc("seat, padded, jack, interface", "A worn seat and a neural jack. The blood stains have been mostly cleaned.\r\n")
+  me.edesc("blood, stains", "Dried. Old. Someone flatlined here once. Or maybe more than once.\r\n")
+  
+  ### exits
+  exit = me.dig("west", "street@neo_downtown")
+  exit.desc = "Back to the street.\r\n"
+-

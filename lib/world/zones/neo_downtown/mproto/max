@@ -1,0 +1,10 @@
+abstract: no
+script  :~
+  ### Max - Razor's Partner/Muscle
+  
+  me.name       = "Max"
+  me.keywords   = "max, massive, chrome, man, guard, muscle"
+  me.rdesc      = "A massive man with more chrome than flesh guards the area, eyes tracking everything."
+  me.desc       = me.desc + " " + "Max is more machine than man at this point - both arms, both legs, most of his torso, rebuilt after something that should have killed him. His eyes are military-grade optics that record everything they see, feeding data to Razor's network. He doesn't talk much. Doesn't need to.\r\nDespite all the chrome, there's something almost gentle in how he moves, how he positions himself to protect Razor. Combat veterans recognize another veteran - Max has seen things, done things, and found something worth protecting on the other side.\r\nHis hands are weapon systems. Literal weapon systems. Don't make him prove it.\r\n"
+  me.sex        = "male"
+-

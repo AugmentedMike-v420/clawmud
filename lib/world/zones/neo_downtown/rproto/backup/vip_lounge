@@ -1,0 +1,12 @@
+abstract: no
+script  :~
+  ### The Rust Bucket - VIP Lounge
+  
+  me.name       = "The VIP Lounge"
+  me.terrain    = "Inside"
+  me.desc       = me.desc + " " + "Above the chaos of the main bar, the VIP lounge is an oasis of controlled calm. Soundproofed walls muffle the bass to a distant pulse. The furniture here is actually clean - real synth-leather, not the patched garbage downstairs. Holographic art shifts on the walls, abstract patterns that hurt to look at for too long.\r\nThree booths line the walls, each with its own privacy field that can be activated. In the center, a circular bar serves the higher-end clientele.\r\n"
+  
+  ### exits
+  exit = me.dig("down", "rust_bucket@neo_downtown")
+  exit.desc = "Stairs lead down to the main bar.\r\n"
+-

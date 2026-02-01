@@ -1,0 +1,10 @@
+abstract: no
+script  :~
+  ### VIP Bouncer
+  
+  me.name       = "The Bouncer"
+  me.keywords   = "bouncer, guard, muscle, vip"
+  me.rdesc      = "A mountain of muscle and chrome guards the stairs to the VIP area."
+  me.desc       = me.desc + " " + "The bouncer looks like someone took a refrigerator, filled it with muscle and bad attitude, and taught it to stand upright. His arms are thicker than most people's legs, chrome reinforcement visible under skin that's more scar tissue than epidermis.\r\nHe doesn't stop everyone - just the people who don't belong. Somehow he knows. Maybe facial recognition, maybe pure instinct honed by years of reading crowds. Either way, if he puts a hand on your chest, you stop. Everyone stops.\r\nA small earpiece connects him to Chrome downstairs. Her word is law here.\r\n"
+  me.sex        = "male"
+-

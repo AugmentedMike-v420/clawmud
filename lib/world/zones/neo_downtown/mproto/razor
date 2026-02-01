@@ -1,0 +1,10 @@
+abstract: no
+script  :~
+  ### Razor - Combat/Wetwork Fixer
+  
+  me.name       = "Razor"
+  me.keywords   = "razor, woman, scars, fixer, combat, merc"
+  me.rdesc      = "A woman with burn scars covering half her face watches everything with cold calculation."
+  me.desc       = me.desc + " " + "Razor earned her name and her scars in the same incident - a corporate black site that didn't burn clean. Half her face is a map of melted tissue, badly healed. She refused reconstruction. Says it reminds her what happens when you trust the wrong people.\r\nShe runs the basement operation - weapons, combat stims, the occasional contract that doesn't ask for details. Her rates are fair, her intel is solid, and her rules are simple: no kids, no hospitals, pay upfront.\r\nThe massive chrome-heavy man beside her is Max - her partner, her muscle, her eyes when she's focused elsewhere. They communicate in glances and half-gestures, years of partnership condensed into shorthand.\r\n"
+  me.sex        = "female"
+-

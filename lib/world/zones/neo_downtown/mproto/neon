@@ -1,0 +1,10 @@
+abstract: no
+script  :~
+  ### Neon - VIP Bartender (Chrome's sister?)
+  
+  me.name       = "Neon"
+  me.keywords   = "neon, bartender, woman, tattoos, circuit, vip"
+  me.rdesc      = "A woman with chrome circuit tattoos tends the VIP bar in near-silence."
+  me.desc       = me.desc + " " + "The resemblance to Chrome is uncanny - same circuit-pattern tattoos crawling up the neck, same milky optic eyes, same chrome-finished hands. But where Chrome has the weight of years and stories, Neon is... blank. Professional. Silent.\r\nSister? Clone? Some kind of backup? No one asks, and neither woman answers. Neon makes drinks with the same mechanical precision as Chrome, speaks only when necessary, and watches everything with those unsettling optic eyes.\r\nSome regulars swear they've seen the two of them have entire conversations without saying a word. Neural link? Shared consciousness? Just sisters who've known each other too long? The mystery is part of the bar's charm.\r\n"
+  me.sex        = "female"
+-

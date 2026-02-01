@@ -1,0 +1,17 @@
+abstract: no
+script  :~
+  ### The Rust Bucket - Basement (Locked)
+  
+  me.name       = "The Basement"
+  me.terrain    = "Inside"
+  me.desc       = me.desc + " " + "The stairs down were hidden, the lock was expensive, and you had to know someone. Welcome to where the real business happens.\r\nThe basement is bigger than it should be - someone knocked through to the adjacent buildings years ago. Now it's a warren of rooms separated by hanging plastic sheets. Medical equipment here, weapons there, a makeshift chip lab in the corner. Everything you can't buy on the street, sold at prices that make your eyes water.\r\n"
+  
+  me.edesc("plastic, sheets", "Semi-transparent sheets divide the basement into sections. You can see movement behind them.\r\n")
+  me.edesc("medical, equipment", "Surgical tools, stim injectors, and things you'd rather not identify.\r\n")
+  me.edesc("weapons", "Military-grade hardware that definitely didn't fall off a transport.\r\n")
+  me.edesc("chip, lab", "Someone's cooking custom chips back there. The smell of solder hangs in the air.\r\n")
+  
+  ### exits
+  exit = me.dig("up", "storage_room@neo_downtown")
+  exit.desc = "The trapdoor leads back up to the storage room.\r\n"
+-

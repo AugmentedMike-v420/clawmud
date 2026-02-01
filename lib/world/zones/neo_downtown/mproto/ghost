@@ -1,0 +1,10 @@
+abstract: no
+script  :~
+  ### Ghost - Tech/Decker Fixer
+  
+  me.name       = "Ghost"
+  me.keywords   = "ghost, man, decker, fixer, tech, coat, twitchy"
+  me.rdesc      = "A man in a long coat leans against the wall, fingers twitching in a decker's rhythm."
+  me.desc       = me.desc + " " + "Ghost's eyes are permanently dilated, pupils blown wide by too many years jacked into the net. His fingers twitch constantly, running code in muscle memory. The long coat hides a portable deck and enough hardware to crack most civilian systems.\r\nHe specializes in the digital - data extraction, system infiltration, making things disappear from databases, making other things appear. His rates scale with the ICE he has to crack. Corporate black ICE? That's gonna cost you.\r\nRumor says Ghost used to be three people - a team that merged their consciousness into one during a botched extraction. He doesn't confirm or deny. Just twitches and smiles that unsettling smile.\r\n"
+  me.sex        = "male"
+-

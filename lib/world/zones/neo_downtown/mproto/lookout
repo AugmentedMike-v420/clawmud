@@ -1,0 +1,10 @@
+abstract: no
+script  :~
+  ### Lookout Kid
+  
+  me.name       = "Lookout Kid"
+  me.keywords   = "kid, lookout, child, eye, cyber"
+  me.rdesc      = "A kid with one expensive cybernetic eye watches you with flat interest."
+  me.desc       = me.desc + " " + "The kid can't be more than twelve, maybe thirteen, but one eye is corporate-grade military optics worth more than most people make in a year. It tracks movement, records, zooms - you can see the iris adjusting as it focuses on you.\r\nHow a street kid got that kind of chrome is a story no one tells. The surgery alone would have killed most adults. But here they are, silent and watchful, the dealer's early warning system.\r\nThey don't speak. Maybe can't. But that cyber-eye sees everything, and somewhere, someone is watching the feed.\r\n"
+  me.sex        = "neutral"
+-

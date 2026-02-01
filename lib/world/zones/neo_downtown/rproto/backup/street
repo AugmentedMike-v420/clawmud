@@ -1,0 +1,22 @@
+abstract: no
+script  :~
+  ### Neo Downtown - Street
+  
+  me.name       = "Neon Street"
+  me.terrain    = "City"
+  me.desc       = me.desc + " " + "The street pulses with life even at this hour - it's always some hour where someone's awake and looking for something. Neon signs compete for attention: gambling dens, ramen joints, body mod clinics, places that don't advertise what they sell. The rain has stopped but the streets are still slick, reflecting the light show above in oily puddles.\r\nThe Rust Bucket's entrance is a reinforced door with no sign - if you don't know what it is, you're not meant to. Across the street, a food cart sells something that smells almost like real meat. A group of gangers in matching chrome implants eye passersby from the corner.\r\n"
+  
+  me.edesc("door, bucket, entrance", "A heavy door with no sign. Those who need to know, know.\r\n")
+  me.edesc("cart, food, meat", "A hovercart selling synthetic protein in various forms. Probably fine.\r\n")
+  me.edesc("gangers, chrome", "Four or five of them, all sporting the same chrome jaw implants. Gang marking.\r\n")
+  
+  ### exits
+  exit = me.dig("south", "rust_bucket@neo_downtown")
+  exit.desc = "The unmarked door to The Rust Bucket.\r\n"
+  
+  exit = me.dig("west", "back_alley@neo_downtown")
+  exit.desc = "A dark alley between buildings.\r\n"
+  
+  exit = me.dig("east", "jack_point@neo_downtown")
+  exit.desc = "A converted phone booth with a flickering holographic sign.\r\n"
+-

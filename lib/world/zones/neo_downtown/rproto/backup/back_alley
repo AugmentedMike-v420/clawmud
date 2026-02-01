@@ -1,0 +1,17 @@
+abstract: no
+script  :~
+  ### Neo Downtown - Back Alley
+  
+  me.name       = "Back Alley"
+  me.terrain    = "City"
+  me.desc       = me.desc + " " + "The alley between buildings is barely wide enough for two people to pass. Dumpsters overflow with garbage and things you don't want to look at too closely. Fire escapes zigzag up the walls, and you can see movement in the shadows above - people living in the spaces between spaces.\r\nA dealer works the corner, wares hidden but available. Behind them, a heavy door leads to somewhere, but it's watched by a drone that tracks your movement.\r\nThis is where you go when you don't want to be seen. Of course, someone always sees.\r\n"
+  
+  me.edesc("dumpsters, garbage", "Overflowing with the detritus of urban life. Don't dig too deep.\r\n")
+  me.edesc("fire, escapes", "Rusty ladders and platforms. Someone lives up there - you can see bedding.\r\n")
+  me.edesc("door, heavy", "A door with no visible handle. Probably sensor-locked.\r\n")
+  me.edesc("drone", "A small surveillance drone. Its camera lens tracks you with mechanical precision.\r\n")
+  
+  ### exits
+  exit = me.dig("east", "street@neo_downtown")
+  exit.desc = "Back to the neon-lit street.\r\n"
+-

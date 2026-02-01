@@ -1,0 +1,19 @@
+abstract: no
+script  :~
+  ### The Rust Bucket - Storage Room (Hidden)
+  
+  me.name       = "Behind the Bar"
+  me.terrain    = "Inside"
+  me.desc       = me.desc + " " + "You've slipped behind Chrome's bar, into a cramped space that smells of synth-whiskey and machine oil. Crates of bottles line the walls, but they're just cover - most are empty. The real inventory is in the locked cabinet: data chips, credsticks, things people need to disappear.\r\nA panel in the floor looks newer than the rest. If you know what you're looking for, you can see the hinges.\r\nChrome's personal terminal sits in the corner, its screen dark but humming with standby power. You probably shouldn't be here.\r\n"
+  
+  me.edesc("panel, floor, hinges", "A hidden trapdoor. It leads down to the basement.\r\n")
+  me.edesc("cabinet, locked", "Locked tight. Chrome keeps the key on a chain around her neck.\r\n")
+  me.edesc("terminal, screen", "Chrome's personal terminal. Accessing it without permission would be... unwise.\r\n")
+  
+  ### exits
+  exit = me.dig("out", "bar_counter@neo_downtown")
+  exit.desc = "Back to the bar counter area.\r\n"
+  
+  exit = me.dig("down", "basement@neo_downtown")
+  exit.desc = "The trapdoor leads down to darkness.\r\n"
+-

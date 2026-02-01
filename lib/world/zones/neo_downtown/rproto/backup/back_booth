@@ -1,0 +1,12 @@
+abstract: no
+script  :~
+  ### The Rust Bucket - Back Booth
+  
+  me.name       = "The Back Booth"
+  me.terrain    = "Inside"
+  me.desc       = me.desc + " " + "Tucked into the darkest corner of the bar, this booth is a shadow within shadows. The lighting here seems to bend away, leaving occupants in comfortable anonymity. The seats are worn leather, patched with duct tape and hope. A white noise generator hums under the table, defeating casual eavesdroppers.\r\nThis is where the fixers sit. The people who connect runners with jobs, take their cut, and never remember your name if asked.\r\n"
+  
+  ### exits
+  exit = me.dig("east", "rust_bucket@neo_downtown")
+  exit.desc = "Back to the main bar area.\r\n"
+-

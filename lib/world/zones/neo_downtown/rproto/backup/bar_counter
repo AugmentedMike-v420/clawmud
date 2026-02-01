@@ -1,0 +1,14 @@
+abstract: no
+script  :~
+  ### The Rust Bucket - Bar Counter
+  
+  me.name       = "The Bar Counter"
+  me.terrain    = "Inside"
+  me.desc       = me.desc + " " + "The bar is a slab of salvaged hull plating from some long-dead starship, its surface etched with decades of use. Chrome works behind it with mechanical precision, bottles of synth-whiskey and real-thing vodka lined up like soldiers. A few stools are open, their occupants nursing drinks and nursing grudges.\r\nThe mirror behind the bar is cracked but functional - you can see the whole room reflected in fragments. A small door marked 'STAFF ONLY' leads behind the bar.\r\n"
+  
+  me.edesc("door, staff", "A reinforced door marked 'STAFF ONLY'. Chrome has the only key.\r\n")
+  
+  ### exits
+  exit = me.dig("north", "rust_bucket@neo_downtown")
+  exit.desc = "Back to the main bar area.\r\n"
+-

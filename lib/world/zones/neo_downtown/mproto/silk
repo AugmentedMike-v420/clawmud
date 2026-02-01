@@ -1,0 +1,10 @@
+abstract: no
+script  :~
+  ### Silk - Social Engineering Fixer
+  
+  me.name       = "Silk"
+  me.keywords   = "silk, woman, suit, fixer, social, corpo"
+  me.rdesc      = "A woman in a silk suit holds court in the booth, surrounded by nervous-looking corpos."
+  me.desc       = me.desc + " " + "Everything about Silk screams money - the suit, the perfect skin, the subtle chrome that's purely cosmetic. She looks like she should be in a boardroom, not a dive bar. That's exactly why she's useful.\r\nSilk works the human angle. Need someone to get into a party they're not invited to? Need a corpo convinced to look the other way? Need a relationship manufactured or destroyed? She's your fixer. Her network of contacts spans from street-level hustlers to board members.\r\nNo one knows her real name or her real face - the one she wears now is her third, maybe fourth. She changes identities like clothes, slipping between social strata like water.\r\n"
+  me.sex        = "female"
+-
