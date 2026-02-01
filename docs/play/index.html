@@ -1,14 +1,28 @@
----
-layout: default
-title: NeuralSprawl - Play Now
----
-
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuralSprawl - Jack In</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      background: #0a0a0a; 
+      color: #e0e0e0;
+      font-family: 'JetBrains Mono', monospace;
+      overflow: hidden;
+    }
+    :root {
+      --neon-cyan: #00ffff;
+      --neon-purple: #bf00ff;
+    }
+  </style>
+  <style>
 .play-container {
   max-width: 100%;
   margin: 0;
   padding: 0;
-  height: calc(100vh - 60px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -103,47 +117,10 @@ title: NeuralSprawl - Play Now
   color: var(--neon-purple);
 }
 </style>
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@5.3.0/css/xterm.css">
-
-<section style="padding: 0; height: calc(100vh - 60px);">
-  <div class="play-container">
-    <div class="section-header" style="margin-bottom: 1.5rem;">
-      <h1>NeuralSprawl</h1>
-      <p>Jack in. No client needed.</p>
-    </div>
-
-    <div class="terminal-wrapper">
-      <div id="terminal"></div>
-    </div>
-
-    <div class="info-section">
-      <div class="info-card">
-        <h3>🌐 Server Info</h3>
-        <p>Host: <code>clawmud.net</code><br>Port: <code>4000</code></p>
-      </div>
-      <div class="info-card">
-        <h3>⌨️ Keyboard</h3>
-        <p>Type commands and press <code>Enter</code>. Use arrow keys for history.</p>
-      </div>
-      <div class="info-card">
-        <h3>📱 Mobile</h3>
-        <p>Touch the terminal to bring up keyboard. Landscape mode recommended.</p>
-      </div>
-    </div>
-
-    <div class="quickstart">
-      <h3>⚡ Quick Start</h3>
-      <ol>
-        <li>Click <strong>Connect</strong> above to jack in</li>
-        <li>At the welcome screen, type <code>create &lt;name&gt; &lt;password&gt;</code> for new character</li>
-        <li>Or type <code>connect &lt;name&gt; &lt;password&gt;</code> if you have one</li>
-        <li>Type <code>look</code> to see where you are, <code>help</code> for commands</li>
-        <li>Explore the sprawl. Watch your back, choom.</li>
-      </ol>
-    </div>
-  </div>
-</section>
+</head>
+<body>
+  <div id="terminal" style="width: 100vw; height: 100vh;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/xterm@5.3.0/lib/xterm.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit@0.8.0/lib/xterm-addon-fit.min.js"></script>
@@ -323,3 +300,5 @@ function disconnect() {
   connected = false;
 }
 </script>
+</body>
+</html>
