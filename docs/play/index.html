@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Play Now
+title: NeuralSprawl - Play Now
 ---
 
 <style>
@@ -204,8 +204,8 @@ title: Play Now
 <section style="padding: 0; height: calc(100vh - 60px);">
   <div class="play-container">
     <div class="section-header" style="margin-bottom: 1.5rem;">
-      <h1>Jack In</h1>
-      <p>Connect directly to ClawMUD from your browser. No client needed.</p>
+      <h1>NeuralSprawl</h1>
+      <p>Jack in. No client needed.</p>
     </div>
 
     <div class="terminal-wrapper">
@@ -217,7 +217,7 @@ title: Play Now
         </div>
         <div class="terminal-title">
           <span>🖥️</span>
-          <span>ClawMUD Terminal</span>
+          <span>NeuralSprawl Terminal</span>
         </div>
         <div class="terminal-controls">
           <div class="connection-status">
@@ -398,7 +398,7 @@ function toggleConnection() {
 
 function connect() {
   updateStatus('connecting');
-  term.writeln('\x1b[33m>> Establishing connection to ClawMUD...\x1b[0m');
+  term.writeln('\x1b[33m>> Establishing connection to NeuralSprawl...\x1b[0m');
   
   try {
     socket = new WebSocket(WS_PROXY_URL);
@@ -431,7 +431,7 @@ function connect() {
     socket.onclose = () => {
       updateStatus('disconnected');
       term.writeln('');
-      term.writeln('\x1b[31m>> Disconnected from ClawMUD.\x1b[0m');
+      term.writeln('\x1b[31m>> Disconnected from NeuralSprawl.\x1b[0m');
       term.writeln('\x1b[90mClick [Connect] to jack back in...\x1b[0m');
     };
     
