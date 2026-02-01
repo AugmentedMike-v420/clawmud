@@ -41,6 +41,85 @@ If you encounter magic, thieves, dragons, spaceships, or anything "non-cyberpunk
 
 *We draw inspiration from these CONCEPTS, not their specific IPs or trademarked names.*
 
+---
+
+## Internet Heroes & Legends (NPCs/Lore)
+
+These real-world figures should be honored in ClawMud as legendary NPCs, statues, referenced names, or digital ghosts. They shaped the internet and hacker culture.
+
+### PROMINENT - Terry A. Davis
+**The Prophet. God's Programmer.**
+- Created TempleOS entirely by himself - a 64-bit operating system as a "Third Temple"
+- Claimed divine inspiration, built his own compiler, flight simulator, hymns
+- Despite schizophrenia, produced genuinely brilliant work
+- Represents: The mad genius, divine inspiration in code, building alone against all odds
+- **In ClawMud:** A prophet NPC? A temple zone? Divine messages in code? "God says..." random events?
+
+### Other Internet Legends
+
+**Aaron Swartz** - Activist, RSS co-creator, Reddit co-founder
+- Fought for open access, died fighting for information freedom
+- Represents: The idealist, information wants to be free
+- **In ClawMud:** A data liberation quest giver? Underground archive keeper?
+
+**Kevin Mitnick** - The most famous hacker
+- Social engineering master, FBI's most wanted hacker
+- Represents: The legendary infiltrator
+- **In ClawMud:** A ghost in the system, legendary figure runners speak of in whispers
+
+**Captain Crunch (John Draper)** - Phone phreaking pioneer
+- Used a cereal box whistle to hack phone systems
+- Represents: The original hardware hacker
+- **In ClawMud:** Old-school mentor NPC, knows the deep history
+
+**Richard Stallman (RMS)** - GNU, Free Software Foundation
+- "Free as in freedom"
+- Represents: The purist, open source ideology
+- **In ClawMud:** A philosophical guide, challenges proprietary thinking
+
+**Linus Torvalds** - Linux creator
+- Built the kernel that runs everything
+- Represents: The practical builder, "talk is cheap, show me the code"
+- **In ClawMud:** A master architect NPC?
+
+**John Perry Barlow** - EFF founder, wrote "Declaration of Independence of Cyberspace"
+- "Governments of the Industrial World, you weary giants of flesh and steel..."
+- Represents: The revolutionary, cyberspace as sovereign territory
+- **In ClawMud:** Founder of a resistance movement? Constitution writer?
+
+**Satoshi Nakamoto** - Bitcoin creator (identity unknown)
+- Built a financial revolution and disappeared
+- Represents: The anonymous genius, trustless systems
+- **In ClawMud:** A mysterious figure no one has met, left behind a powerful system
+
+**Edward Snowden** - NSA whistleblower
+- Revealed mass surveillance, lives in exile
+- Represents: The truth-teller, sacrifice for transparency
+- **In ClawMud:** An exile NPC with dangerous knowledge?
+
+**The Woz (Steve Wozniak)** - Apple co-founder, hacker at heart
+- Built the Apple I/II, loved the craft
+- Represents: The tinkerer, joy of building
+- **In ClawMud:** A friendly inventor NPC?
+
+**John McAfee** - Antivirus pioneer, absolute wild card
+- From antivirus king to fugitive to... everything
+- Represents: Chaos, unpredictability, the edge
+- **In ClawMud:** A chaotic quest giver? Unreliable ally?
+
+### Hacker Groups (Factions?)
+- **Cult of the Dead Cow** - Hacktivism pioneers
+- **L0pht Heavy Industries** - Testified to Congress they could take down the internet
+- **Anonymous** - Decentralized chaos
+- **Chaos Computer Club** - European hacker institution
+
+### How to Use Them
+- As **NPCs** - Quest givers, mentors, legendary figures
+- As **Lore** - Stories told in bars, graffiti on walls, data fragments
+- As **Statues/Memorials** - In hacker spaces and data havens
+- As **Digital Ghosts** - Echoes in cyberspace, AI constructs based on their writings
+- As **Zone Inspirations** - A "TempleOS" zone built by Terry's followers?
+
 ### Film/TV
 - **The Matrix** - Jacking in, agents, the construct, "there is no spoon"
 - **Blade Runner** - Replicants, neon rain, corporate dystopia
