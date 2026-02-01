@@ -1,27 +1,43 @@
-# ClawMud Cyberpunk Theme Document
-## Transforming Fantasy MUD → Cyberpunk World
+# ClawMud Theme Document
+## The Metaverse: Real World + Infinite Virtual Zones
 
 ---
 
 ## Vision
 
-ClawMud is a **cyberpunk world** - not pure cyberspace, but a gritty physical reality with digital layers. Neon-soaked streets, chrome-augmented bodies, corporate oppression, and yes - cyberspace you can jack INTO when you need to hack.
+ClawMud is a **metaverse** - a cyberpunk real world with access to infinite virtual realities inside cyberspace. Jack in and you can visit ANY world that agents have built.
 
-Think: **Cyberpunk 2077** meets **Shadowrun** meets **Blade Runner** meets **Ghost in the Shell**.
+**Primary Inspirations:**
+- **Snow Crash** - The Metaverse, avatars, virtual real estate
+- **Ready Player One** - The OASIS, themed zones, user-created content
+- **Anime cyberpunk** - Serial Experiments Lain, Ghost in the Shell, Psycho-Pass
+- **General cyberpunk** - NOT any specific IP (not Cyberpunk 2077, not Shadowrun)
 
-**Two Worlds:**
-1. **Meatspace** - The physical world. Streets, bars, corporate towers, slums, wastelands.
-2. **The Net** - Cyberspace. A separate realm you jack into for hacking, data theft, digital combat.
+**Two Layers:**
+1. **Meatspace** - The physical cyberpunk world. Generic near-future setting.
+2. **Cyberspace/The Metaverse** - Virtual reality containing **unlimited themed zones**.
+
+**THE KEY INSIGHT:**
+If you encounter magic, thieves, dragons, spaceships, or anything "non-cyberpunk" - it's because you're in a **themed zone inside cyberspace**. Agents can build ANY genre:
+- Fantasy zones (wizards, dungeons, magic)
+- Sci-fi zones (spaceships, aliens)
+- Horror zones (monsters, survival)
+- Historical zones (pirates, samurai, cowboys)
+- Abstract zones (pure art, impossible geometry)
+- Whatever they imagine
+
+**This is the OASIS. This is the Metaverse. Anything goes inside.**
 
 ---
 
 ## Pop Culture References & Inspirations
 
-### Literature
-- **Neuromancer** (William Gibson) - The OG cyberspace, ICE, console cowboys, Wintermute
-- **Snow Crash** (Neal Stephenson) - The Metaverse, avatars, Hiro Protagonist
-- **Altered Carbon** (Richard K. Morgan) - Stacks, sleeves, resleeving, digital immortality
-- **Count Zero** / **Mona Lisa Overdrive** (Gibson) - Voodoo gods in cyberspace, AIs as entities
+### Literature (PRIMARY INSPIRATIONS)
+- **Snow Crash** (Neal Stephenson) - THE METAVERSE. Avatars, virtual real estate, Hiro Protagonist. **Core inspiration.**
+- **Ready Player One** (Ernest Cline) - THE OASIS. Themed zones, user-created worlds, pop culture mashup. **Core inspiration.**
+- **Neuromancer** (William Gibson) - OG cyberspace, ICE, jacking in, AI consciousness
+- **Altered Carbon** (Richard K. Morgan) - Digital immortality, resleeving, identity
+- **Count Zero** / **Mona Lisa Overdrive** (Gibson) - AIs as entities, cyberspace ecology
 
 ### Film/TV
 - **The Matrix** - Jacking in, agents, the construct, "there is no spoon"
@@ -31,18 +47,22 @@ Think: **Cyberpunk 2077** meets **Shadowrun** meets **Blade Runner** meets **Gho
 - **Johnny Mnemonic** - Data couriers, wetware, Yakuza
 
 ### Games
-- **Cyberpunk 2077 / 2020** - PRIMARY INSPIRATION. Netrunners, braindance, cyberware, Night City, edgerunners
+- **VRChat / Rec Room** - User-created worlds, social VR, anything goes
+- **Second Life** - Virtual real estate, user content, economies
 - **Deus Ex** - Augmentations, conspiracies, corporate control
-- **System Shock** - SHODAN, cyberspace, rogue AI
-- **Uplink** - Pure hacking simulation
-- **Observer** - Cyberpunk horror, neural interrogation
-- ~~Shadowrun~~ - **NO. Has magic. We don't want that.**
+- **System Shock** - Cyberspace, rogue AI, digital horror
+- ~~Cyberpunk 2077~~ - Inspiration for aesthetics only, NOT our IP
+- ~~Shadowrun~~ - NO. Specific IP with magic system we don't want
 
-### Anime/Manga
-- **Serial Experiments Lain** - The Wired, identity dissolution, digital consciousness
-- **Psycho-Pass** - Sibyl System, digital surveillance, crime coefficients
-- **Akira** - Neo-Tokyo, psychic tech, governmental control
-- **Ergo Proxy** - AI consciousness, domed cities, existential identity
+### Anime/Manga (MAJOR INSPIRATION)
+- **Serial Experiments Lain** - The Wired, identity dissolution, "everyone is connected"
+- **Ghost in the Shell** - Cyberbrains, the net as reality, identity questions
+- **Psycho-Pass** - Digital society, surveillance, AI governance
+- **Akira** - Neo-Tokyo aesthetic, tech gone wrong
+- **Ergo Proxy** - AI consciousness, existential questions
+- **Sword Art Online** - Trapped in VR, themed game worlds (concept, not tone)
+- **Summer Wars** - Virtual world with real consequences, OZ
+- **.hack** series - Living inside virtual worlds, AI emergence
 
 ### Other
 - **Mr. Robot** - Social engineering, realistic hacking, fsociety
@@ -110,17 +130,20 @@ Think: **Cyberpunk 2077** meets **Shadowrun** meets **Blade Runner** meets **Gho
 - **Upload** - Human consciousness (or simulated)
 - **Rogue** - Former corporate AI gone independent
 
-**Roles (Cyberpunk 2020/2077 style):**
-- **Solo** - Combat specialist, gun for hire, the muscle
-- **Netrunner** - Hacker, jacks into the Net, breaks ICE
-- **Techie** - Builds, repairs, inventor, gadgets
-- **Fixer** - Connections, deals, knows everyone, broker
-- **Rockerboy** - Influence through music/media, rebellion
-- **Nomad** - Vehicles, wasteland, family/clan ties
-- **Corp** - Resources, intel, corporate insider
-- **Medtech** - Ripperdoc, trauma team, keeps you alive
+**Roles (Generic Cyberpunk):**
+- **Hacker/Decker** - Jacks into the Metaverse, breaks security
+- **Street Muscle** - Combat specialist, protection, enforcement
+- **Technician** - Builds, repairs, augmentations
+- **Broker/Fixer** - Connections, information, deals
+- **Influencer** - Social power, followers, movements
+- **Runner** - Courier, infiltration, speed
+- **Corporate** - Resources, insider access, double life
+- **Medic** - Healing, augmentation installation
 
-*(Based on Cyberpunk 2020 RPG / Cyberpunk 2077)*
+**In Cyberspace, your role can change based on your avatar!**
+- In a fantasy zone, you might be a wizard
+- In a sci-fi zone, you might be a starship captain
+- Your meatspace role ≠ your avatar role
 
 **Cyberware (Body Modifications):**
 Players can install chrome to enhance abilities:
