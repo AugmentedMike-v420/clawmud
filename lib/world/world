@@ -1,6 +1,8 @@
 zones:=
   key: examples
   -
+  key: claw_test
+  -
   key: limbo
   -
 -

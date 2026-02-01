@@ -1,0 +1,358 @@
+races:=
+  name          : elf
+  abbrev        : elf
+  pc_ok         : 1
+  body_size     : medium
+  body_positions:=
+    name  : floating about head
+    type  : floating about head
+    weight: 0
+    -
+    name  : head
+    type  : head
+    weight: 2
+    -
+    name  : face
+    type  : face
+    weight: 2
+    -
+    name  : left ear
+    type  : ear
+    weight: 0
+    -
+    name  : right ear
+    type  : ear
+    weight: 0
+    -
+    name  : neck
+    type  : neck
+    weight: 1
+    -
+    name  : torso
+    type  : torso
+    weight: 50
+    -
+    name  : about body
+    type  : about body
+    weight: 0
+    -
+    name  : left arm
+    type  : arm
+    weight: 7
+    -
+    name  : right arm
+    type  : arm
+    weight: 7
+    -
+    name  : left wrist
+    type  : wrist
+    weight: 1
+    -
+    name  : right wrist
+    type  : wrist
+    weight: 1
+    -
+    name  : hands
+    type  : hands
+    weight: 4
+    -
+    name  : left finger
+    type  : finger
+    weight: 1
+    -
+    name  : right finger
+    type  : finger
+    weight: 1
+    -
+    name  : waist
+    type  : waist
+    weight: 1
+    -
+    name  : legs
+    type  : legs
+    weight: 18
+    -
+    name  : feet
+    type  : feet
+    weight: 4
+    -
+    name  : left grip
+    type  : held
+    weight: 0
+    -
+    name  : right grip
+    type  : held
+    weight: 0
+    -
+  -
+  name          : hill giant
+  abbrev        : hgi
+  pc_ok         : 0
+  body_size     : huge
+  body_positions:=
+    name  : floating about head
+    type  : floating about head
+    weight: 0
+    -
+    name  : head
+    type  : head
+    weight: 2
+    -
+    name  : face
+    type  : face
+    weight: 2
+    -
+    name  : left ear
+    type  : ear
+    weight: 0
+    -
+    name  : right ear
+    type  : ear
+    weight: 0
+    -
+    name  : neck
+    type  : neck
+    weight: 1
+    -
+    name  : torso
+    type  : torso
+    weight: 50
+    -
+    name  : about body
+    type  : about body
+    weight: 0
+    -
+    name  : left arm
+    type  : arm
+    weight: 7
+    -
+    name  : right arm
+    type  : arm
+    weight: 7
+    -
+    name  : left wrist
+    type  : wrist
+    weight: 1
+    -
+    name  : right wrist
+    type  : wrist
+    weight: 1
+    -
+    name  : hands
+    type  : hands
+    weight: 4
+    -
+    name  : left finger
+    type  : finger
+    weight: 1
+    -
+    name  : right finger
+    type  : finger
+    weight: 1
+    -
+    name  : waist
+    type  : waist
+    weight: 1
+    -
+    name  : legs
+    type  : legs
+    weight: 18
+    -
+    name  : feet
+    type  : feet
+    weight: 4
+    -
+    name  : left grip
+    type  : held
+    weight: 0
+    -
+    name  : right grip
+    type  : held
+    weight: 0
+    -
+  -
+  name          : dragon
+  abbrev        : dra
+  pc_ok         : 0
+  body_size     : gigantic
+  body_positions:=
+    name  : floating about head
+    type  : floating about head
+    weight: 0
+    -
+    name  : head
+    type  : head
+    weight: 2
+    -
+    name  : face
+    type  : face
+    weight: 2
+    -
+    name  : left ear
+    type  : ear
+    weight: 0
+    -
+    name  : right ear
+    type  : ear
+    weight: 0
+    -
+    name  : neck
+    type  : neck
+    weight: 8
+    -
+    name  : torso
+    type  : torso
+    weight: 35
+    -
+    name  : about body
+    type  : about body
+    weight: 0
+    -
+    name  : wings
+    type  : wings
+    weight: 20
+    -
+    name  : left foreleg
+    type  : leg
+    weight: 8
+    -
+    name  : right foreleg
+    type  : leg
+    weight: 8
+    -
+    name  : left hindleg
+    type  : leg
+    weight: 6
+    -
+    name  : right hindleg
+    type  : leg
+    weight: 6
+    -
+    name  : legs
+    type  : legs
+    weight: 14
+    -
+    name  : feet
+    type  : feet
+    weight: 8
+    -
+    name  : tail
+    type  : tail
+    weight: 7
+    -
+    name  : left grip
+    type  : held
+    weight: 0
+    -
+    name  : right grip
+    type  : held
+    weight: 0
+    -
+  -
+  name          : centaur
+  abbrev        : cen
+  pc_ok         : 1
+  body_size     : large
+  body_positions:=
+    name  : floating about head
+    type  : floating about head
+    weight: 0
+    -
+    name  : head
+    type  : head
+    weight: 2
+    -
+    name  : face
+    type  : face
+    weight: 2
+    -
+    name  : left ear
+    type  : ear
+    weight: 0
+    -
+    name  : right ear
+    type  : ear
+    weight: 0
+    -
+    name  : neck
+    type  : neck
+    weight: 1
+    -
+    name  : torso
+    type  : torso
+    weight: 25
+    -
+    name  : about body
+    type  : about body
+    weight: 0
+    -
+    name  : left arm
+    type  : arm
+    weight: 7
+    -
+    name  : right arm
+    type  : arm
+    weight: 7
+    -
+    name  : left wrist
+    type  : wrist
+    weight: 1
+    -
+    name  : right wrist
+    type  : wrist
+    weight: 1
+    -
+    name  : hands
+    type  : hands
+    weight: 4
+    -
+    name  : left finger
+    type  : finger
+    weight: 1
+    -
+    name  : right finger
+    type  : finger
+    weight: 1
+    -
+    name  : waist
+    type  : waist
+    weight: 1
+    -
+    name  : horse body
+    type  : torso
+    weight: 20
+    -
+    name  : left front leg
+    type  : leg
+    weight: 6
+    -
+    name  : right front leg
+    type  : leg
+    weight: 6
+    -
+    name  : left rear leg
+    type  : leg
+    weight: 7
+    -
+    name  : right rear leg
+    type  : leg
+    weight: 7
+    -
+    name  : legs
+    type  : legs
+    weight: 13
+    -
+    name  : hooves
+    type  : hooves
+    weight: 8
+    -
+    name  : left grip
+    type  : held
+    weight: 0
+    -
+    name  : right grip
+    type  : held
+    weight: 0
+    -
+  -
+-
