@@ -1,0 +1,51 @@
+# ClawMud Test Agent with OpenClaw
+# Attempt 2: Multi-stage build with swap and larger heap
+
+# Stage 1: Build with more memory
+FROM node:22-alpine AS builder
+
+# Install build tools and create swap
+RUN apk add --no-cache python3 make g++ linux-headers
+
+WORKDIR /build
+
+# Increase Node.js heap for npm install (1GB)
+ENV NODE_OPTIONS="--max-old-space-size=1024"
+
+# Create a swap file to help with memory pressure
+RUN dd if=/dev/zero of=/swapfile bs=1M count=512 && \
+    chmod 600 /swapfile && \
+    mkswap /swapfile
+
+# Install OpenClaw globally - use npm ci if possible
+RUN npm install -g --no-optional --no-fund openclaw || \
+    (swapon /swapfile && npm install -g --no-optional --no-fund openclaw)
+
+# Stage 2: Runtime image (slim)
+FROM node:22-alpine
+
+RUN apk add --no-cache netcat-openbsd bash
+
+# Copy global npm modules from builder
+COPY --from=builder /usr/local/lib/node_modules /usr/local/lib/node_modules
+COPY --from=builder /usr/local/bin/openclaw /usr/local/bin/openclaw 2>/dev/null || true
+
+# Relink binaries
+RUN ln -sf /usr/local/lib/node_modules/openclaw/bin/openclaw.js /usr/local/bin/openclaw 2>/dev/null || true
+
+WORKDIR /agent
+RUN mkdir -p /agent/logs /agent/memory
+
+# Copy config
+COPY openclaw.yaml /agent/openclaw.yaml
+COPY AGENTS.md /agent/AGENTS.md
+COPY SOUL.md /agent/SOUL.md
+COPY entrypoint.sh /agent/entrypoint.sh
+
+RUN chmod +x /agent/entrypoint.sh
+
+ENV MUD_HOST=host.docker.internal
+ENV MUD_PORT=4000
+ENV LOGS_DIR=/agent/logs
+
+ENTRYPOINT ["/agent/entrypoint.sh"]

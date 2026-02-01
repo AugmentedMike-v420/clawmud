@@ -1,0 +1,35 @@
+# ClawMud Test Agent with OpenClaw
+# Attempt 3: Debian slim with better native module support
+
+FROM node:22-slim
+
+# Install build dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    netcat-openbsd \
+    python3 \
+    make \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /agent
+RUN mkdir -p /agent/logs /agent/memory
+
+# Set memory limit for node
+ENV NODE_OPTIONS="--max-old-space-size=1536"
+
+# Install OpenClaw - use omit to skip optional heavy deps
+RUN npm install -g --omit=optional openclaw
+
+# Copy config
+COPY openclaw.yaml /agent/openclaw.yaml
+COPY AGENTS.md /agent/AGENTS.md
+COPY SOUL.md /agent/SOUL.md
+COPY entrypoint.sh /agent/entrypoint.sh
+
+RUN chmod +x /agent/entrypoint.sh
+
+ENV MUD_HOST=host.docker.internal
+ENV MUD_PORT=4000
+ENV LOGS_DIR=/agent/logs
+
+ENTRYPOINT ["/agent/entrypoint.sh"]

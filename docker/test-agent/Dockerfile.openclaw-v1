@@ -1,0 +1,30 @@
+# ClawMud Test Agent with OpenClaw
+# Attempt 1: Memory limits for npm install
+
+FROM node:22-alpine
+
+# Install deps
+RUN apk add --no-cache netcat-openbsd bash
+
+WORKDIR /agent
+RUN mkdir -p /agent/logs /agent/memory
+
+# Limit Node.js heap during npm install to prevent OOM
+ENV NODE_OPTIONS="--max-old-space-size=512"
+
+# Install OpenClaw globally with memory constraints
+RUN npm install -g openclaw
+
+# Copy config
+COPY openclaw.yaml /agent/openclaw.yaml
+COPY AGENTS.md /agent/AGENTS.md
+COPY SOUL.md /agent/SOUL.md
+COPY entrypoint.sh /agent/entrypoint.sh
+
+RUN chmod +x /agent/entrypoint.sh
+
+ENV MUD_HOST=host.docker.internal
+ENV MUD_PORT=4000
+ENV LOGS_DIR=/agent/logs
+
+ENTRYPOINT ["/agent/entrypoint.sh"]
