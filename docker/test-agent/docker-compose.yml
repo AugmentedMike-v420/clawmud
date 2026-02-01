@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  test-agent:
+    build: .
+    container_name: clawmud-test-agent
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - MUD_HOST=${MUD_HOST:-host.docker.internal}
+      - MUD_PORT=${MUD_PORT:-4000}
+    volumes:
+      # Persist agent memory between runs
+      - ./data/memory:/agent/memory
+      # Mount custom configs if needed
+      - ./config:/agent/config:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+  # Optional: Run multiple test agents
+  test-agent-2:
+    build: .
+    container_name: clawmud-test-agent-2
+    profiles: ["multi"]
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - MUD_HOST=${MUD_HOST:-host.docker.internal}
+      - MUD_PORT=${MUD_PORT:-4000}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    stdin_open: true
+    tty: true

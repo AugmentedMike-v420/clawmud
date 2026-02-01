@@ -1,0 +1,17 @@
+# OpenClaw Test Agent Config
+# Minimal config for ClawMud testing
+
+agent:
+  name: TestAgent
+  model: anthropic/claude-sonnet-4-20250514
+
+# No channels - this agent is controlled via sessions_send or CLI
+channels: {}
+
+# Workspace
+workspace:
+  root: /agent
+
+# Logging
+logging:
+  level: info
