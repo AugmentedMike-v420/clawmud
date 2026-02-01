@@ -10,5 +10,8 @@ script  :~
   me.mname    = "%d unfinished mobiles"
   me.rdesc    = "A small hovering robot buzzes around, ready to assist."
   me.mdesc    = "A group of %d mobiles are here, looking unfinished."
-  me.desc     = me.desc + ' ' + "SPARK is a small, spherical robot about the size of a grapefruit. Its metallic surface gleams with a soft blue light emanating from a central \"eye\" lens. Small mechanical arms fold neatly against its body when not in use. It hovers silently using some form of anti-gravity technology, occasionally emitting cheerful beeps and boops. Despite its simple appearance, there's something intelligent in the way it tracks your movements.\r\n"
+  me.desc     = me.desc + ' ' + "    SPARK is a small, spherical robot about the size of a grapefruit.  Its \r\nmetallic surface gleams with a soft blue light emanating from a central \"eye\" \r\nlens.  Small mechanical arms fold neatly against its body when not in use.  It \r\nhovers silently using some form of anti-gravity technology, occasionally \r\nemitting cheerful beeps and boops.  Despite its simple appearance, there's \r\nsomething intelligent in the way it tracks your movements.\r\n"
+  
+  ### character triggers
+  me.attach("spark_greet")
 -

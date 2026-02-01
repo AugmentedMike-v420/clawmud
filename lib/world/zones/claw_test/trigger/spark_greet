@@ -1,0 +1,12 @@
+name: SPARK greets visitors
+type: enter
+code:~
+  # SPARK greets visitors to the lab
+  if ch.is_pc and not ch.hasvar("met_spark"):
+      me.act("emote beeps excitedly and hovers closer to you!")
+      me.act("say *beep boop* Welcome to the Laboratory! I am SPARK, your " \
+             "assistant! How may I help you today?")
+      ch.setvar("met_spark", 1)
+  elif ch.is_pc:
+      me.act("emote chirps happily as you return.")
+-
