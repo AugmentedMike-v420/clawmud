@@ -5,17 +5,38 @@ title: Play Now
 
 <style>
 .play-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0 !important;
+}
+
+.section-header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.section-header p {
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 .terminal-wrapper {
   background: #0a0a0a;
-  border: 2px solid var(--neon-cyan);
-  border-radius: 8px;
+  border: 1px solid var(--neon-cyan);
+  border-radius: 0;
   overflow: hidden;
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .terminal-header {
@@ -52,7 +73,8 @@ title: Play Now
 .dot-green { background: #27c93f; }
 
 #terminal {
-  height: 500px;
+  flex: 1;
+  min-height: 0;
   padding: 0;
 }
 
@@ -119,10 +141,7 @@ title: Play Now
 }
 
 .info-section {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  display: none; /* Hidden by default - terminal is primary */
 }
 
 .info-card {
@@ -153,11 +172,7 @@ title: Play Now
 }
 
 .quickstart {
-  margin-top: 2rem;
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05), rgba(255, 0, 255, 0.05));
-  border: 1px solid rgba(0, 255, 255, 0.2);
-  border-radius: 8px;
-  padding: 1.5rem;
+  display: none; /* Hidden by default */
 }
 
 .quickstart h3 {
@@ -186,7 +201,7 @@ title: Play Now
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@5.3.0/css/xterm.css">
 
-<section>
+<section style="padding: 0; height: calc(100vh - 60px);">
   <div class="play-container">
     <div class="section-header" style="margin-bottom: 1.5rem;">
       <h1>Jack In</h1>
