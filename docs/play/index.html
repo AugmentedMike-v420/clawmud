@@ -39,105 +39,10 @@ title: NeuralSprawl - Play Now
   flex-direction: column;
 }
 
-.terminal-header {
-  background: linear-gradient(90deg, #1a1a2e 0%, #16213e 100%);
-  padding: 0.75rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--neon-cyan);
-}
-
-.terminal-title {
-  color: var(--neon-cyan);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.terminal-dots {
-  display: flex;
-  gap: 6px;
-}
-
-.terminal-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.dot-red { background: #ff5f56; }
-.dot-yellow { background: #ffbd2e; }
-.dot-green { background: #27c93f; }
-
 #terminal {
   flex: 1;
   min-height: 0;
-  padding: 0;
-}
-
-.connection-status {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.status-indicator {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #666;
-}
-
-.status-indicator.connected {
-  background: #27c93f;
-  box-shadow: 0 0 10px #27c93f;
-}
-
-.status-indicator.connecting {
-  background: #ffbd2e;
-  animation: pulse 1s infinite;
-}
-
-.status-indicator.disconnected {
-  background: #ff5f56;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
-
-.connect-btn {
-  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
-  border: none;
-  color: #000;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.connect-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px var(--neon-cyan);
-}
-
-.connect-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.terminal-controls {
-  display: flex;
-  gap: 0.5rem;
+  padding: 0.5rem;
 }
 
 .info-section {
@@ -209,24 +114,6 @@ title: NeuralSprawl - Play Now
     </div>
 
     <div class="terminal-wrapper">
-      <div class="terminal-header">
-        <div class="terminal-dots">
-          <span class="terminal-dot dot-red"></span>
-          <span class="terminal-dot dot-yellow"></span>
-          <span class="terminal-dot dot-green"></span>
-        </div>
-        <div class="terminal-title">
-          <span>🖥️</span>
-          <span>NeuralSprawl Terminal</span>
-        </div>
-        <div class="terminal-controls">
-          <div class="connection-status">
-            <span class="status-indicator" id="status-indicator"></span>
-            <span id="status-text">Disconnected</span>
-          </div>
-          <button class="connect-btn" id="connect-btn" onclick="toggleConnection()">Connect</button>
-        </div>
-      </div>
       <div id="terminal"></div>
     </div>
 
@@ -264,7 +151,12 @@ title: NeuralSprawl - Play Now
 
 <script>
 // Configuration - UPDATE THIS when proxy is deployed
-const WS_PROXY_URL = 'wss://clawmud-proxy.fly.dev';
+// Auto-detect proxy URL based on hostname
+const WS_PROXY_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? 'ws://localhost:8080'
+  : window.location.hostname.match(/^192\.168\./)
+    ? `ws://${window.location.hostname.replace(/:\d+$/, '')}:8080`
+    : 'wss://clawmud-proxy.fly.dev';
 
 let term;
 let socket;
@@ -331,8 +223,11 @@ document.addEventListener('DOMContentLoaded', () => {
   term.writeln('\x1b[90m                    powered by \x1b[36mClawMUD\x1b[0m');
   term.writeln('\x1b[90m           The first MUD created entirely by AI\x1b[0m');
   term.writeln('');
-  term.writeln('\x1b[32m  >> Click [Connect] to jack into the sprawl...\x1b[0m');
+  term.writeln('\x1b[32m  >> Connecting to the sprawl...\x1b[0m');
   term.writeln('');
+
+  // Autoconnect on page load
+  setTimeout(() => connect(), 500);
 
   // Handle window resize
   window.addEventListener('resize', () => {
@@ -357,54 +252,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  updateStatus('disconnected');
 });
 
-function updateStatus(state) {
-  const indicator = document.getElementById('status-indicator');
-  const text = document.getElementById('status-text');
-  const btn = document.getElementById('connect-btn');
-  
-  indicator.className = 'status-indicator ' + state;
-  
-  switch(state) {
-    case 'connected':
-      text.textContent = 'Connected';
-      btn.textContent = 'Disconnect';
-      btn.disabled = false;
-      connected = true;
-      break;
-    case 'connecting':
-      text.textContent = 'Connecting...';
-      btn.textContent = 'Connecting...';
-      btn.disabled = true;
-      break;
-    case 'disconnected':
-      text.textContent = 'Disconnected';
-      btn.textContent = 'Connect';
-      btn.disabled = false;
-      connected = false;
-      break;
-  }
-}
-
-function toggleConnection() {
-  if (connected) {
-    disconnect();
-  } else {
-    connect();
-  }
-}
-
 function connect() {
-  updateStatus('connecting');
+  connected = false;
   term.writeln('\x1b[33m>> Establishing connection to NeuralSprawl...\x1b[0m');
   
   try {
     socket = new WebSocket(WS_PROXY_URL);
     
     socket.onopen = () => {
-      updateStatus('connected');
+      connected = true;
       term.writeln('\x1b[32m>> Connected! Welcome to the sprawl.\x1b[0m');
       term.writeln('');
       
@@ -429,15 +287,21 @@ function connect() {
     };
     
     socket.onclose = () => {
-      updateStatus('disconnected');
+      connected = false;
       term.writeln('');
       term.writeln('\x1b[31m>> Disconnected from NeuralSprawl.\x1b[0m');
-      term.writeln('\x1b[90mClick [Connect] to jack back in...\x1b[0m');
+      term.writeln('\x1b[90m>> Reconnecting in 3 seconds...\x1b[0m');
+      // Auto-reconnect after 3 seconds
+      setTimeout(() => {
+        if (!connected) connect();
+      }, 3000);
     };
     
   } catch (e) {
-    updateStatus('disconnected');
+    connected = false;
     term.writeln('\x1b[31m>> Failed to connect: ' + e.message + '\x1b[0m');
+    // Retry connection
+    setTimeout(() => connect(), 3000);
   }
 }
 
@@ -446,6 +310,6 @@ function disconnect() {
     socket.close();
     socket = null;
   }
-  updateStatus('disconnected');
+  connected = false;
 }
 </script>
