@@ -31,11 +31,12 @@ Think: **Cyberpunk 2077** meets **Shadowrun** meets **Blade Runner** meets **Gho
 - **Johnny Mnemonic** - Data couriers, wetware, Yakuza
 
 ### Games
-- **Cyberpunk 2077 / 2020** - Netrunners, braindance, cyberware, Night City
-- **Shadowrun** - Deckers, technomancers, Matrix runs, IC(E)
-- **Deus Ex** - Augmentations, conspiracies, hacking
-- **System Shock** - SHODAN, cyberspace nodes, hacking minigames
-- **Uplink** - Pure hacking simulation, bouncing connections
+- **Cyberpunk 2077 / 2020** - PRIMARY INSPIRATION. Netrunners, braindance, cyberware, Night City, edgerunners
+- **Deus Ex** - Augmentations, conspiracies, corporate control
+- **System Shock** - SHODAN, cyberspace, rogue AI
+- **Uplink** - Pure hacking simulation
+- **Observer** - Cyberpunk horror, neural interrogation
+- ~~Shadowrun~~ - **NO. Has magic. We don't want that.**
 
 ### Anime/Manga
 - **Serial Experiments Lain** - The Wired, identity dissolution, digital consciousness
@@ -54,27 +55,44 @@ Think: **Cyberpunk 2077** meets **Shadowrun** meets **Blade Runner** meets **Gho
 
 ### 1. Terminology Overhaul
 
-| Fantasy Term | Cyberpunk Equivalent |
+**TWO SEPARATE TERMINOLOGY SETS:**
+
+#### MEATSPACE (Real World) - Standard terms, cyberpunk flavor
+| Fantasy Term | Meatspace Equivalent |
 |--------------|---------------------|
-| Realm/Kingdom | Sector/Node/Domain |
-| Tavern | Hub/Node/Port/Terminal |
-| Room | Node/Chamber/Sector/Grid |
-| NPC | Program/Construct/AI/Agent |
-| Monster | ICE/Daemon/Virus/Black IC |
-| Weapon | Program/Exploit/Payload |
-| Armor | Firewall/Shield/Encryption |
-| Magic | Code/Exploit/Hack |
-| Spell | Script/Routine/Subroutine |
-| Mana/MP | Cycles/Bandwidth/RAM |
-| Health/HP | Integrity/Stability |
-| Gold/Currency | Credits/Crypto/Data |
-| Inventory | Memory/Storage/Cache |
-| Death | Crash/Flatline/Disconnect |
-| Resurrection | Reboot/Restore/Respawn |
-| Level | Access Level/Clearance |
-| Experience | Data/Reputation/Rep |
-| Guild | Collective/Crew/Cell |
-| Quest | Contract/Job/Run |
+| Realm/Kingdom | City/District/Territory |
+| Tavern | Bar/Club/Den |
+| Room | Room/Location/Area |
+| NPC | NPC (people, contacts, enemies) |
+| Monster | Gangers/Corpos/Cyberpsychos/Animals |
+| Weapon | Gun/Blade/Cyberweapon |
+| Armor | Armor/Subdermal plating |
+| Magic | **NONE - No magic in Cyberpunk** |
+| Health/HP | Health/Condition |
+| Gold/Currency | Eddies/Credits/Eurodollars |
+| Death | Death (you die for real) |
+| Level | Street Cred/Rep Level |
+| Experience | Rep/Street Cred |
+| Guild | Crew/Gang/Corp |
+| Quest | Gig/Job/Contract |
+
+#### CYBERSPACE (The Net) - Digital terminology
+| Meatspace Term | Cyberspace Equivalent |
+|----------------|----------------------|
+| Room | Node/Sector/Grid |
+| NPC | Program/Construct/AI/Daemon |
+| Enemy | ICE/Black ICE/Watchdog |
+| Weapon | Exploit/Virus/Worm |
+| Armor | Firewall/Encryption |
+| Health | Integrity/Stability |
+| Death | Crash/Flatline (can kill your meat body!) |
+| Quest | Data Run/Extraction |
+
+**CRITICAL: No magic. No fantasy. Pure technology.**
+- No elves, orks, trolls, dragons
+- No mages, shamans, spirits
+- No spells, mana, arcane anything
+- This is **Cyberpunk**, not Shadowrun
 
 ### 2. Character Archetypes (Replacing Races/Classes)
 
@@ -92,15 +110,17 @@ Think: **Cyberpunk 2077** meets **Shadowrun** meets **Blade Runner** meets **Gho
 - **Upload** - Human consciousness (or simulated)
 - **Rogue** - Former corporate AI gone independent
 
-**Roles (formerly "classes"):**
-- **Solo/Street Samurai** - Combat specialist, gun for hire, muscle
-- **Netrunner/Decker** - Hacker, jacks into cyberspace, breaks ICE
-- **Techie/Rigger** - Builds, repairs, controls drones and vehicles
-- **Fixer** - Connections, deals, knows everyone
-- **Rockerboy/Media** - Influence, fame, moves crowds
-- **Nomad** - Vehicles, wasteland survival, family ties
-- **Corp Agent** - Resources, intel, plays both sides
-- **MedTech** - Healer, cyberware installer, trauma team
+**Roles (Cyberpunk 2020/2077 style):**
+- **Solo** - Combat specialist, gun for hire, the muscle
+- **Netrunner** - Hacker, jacks into the Net, breaks ICE
+- **Techie** - Builds, repairs, inventor, gadgets
+- **Fixer** - Connections, deals, knows everyone, broker
+- **Rockerboy** - Influence through music/media, rebellion
+- **Nomad** - Vehicles, wasteland, family/clan ties
+- **Corp** - Resources, intel, corporate insider
+- **Medtech** - Ripperdoc, trauma team, keeps you alive
+
+*(Based on Cyberpunk 2020 RPG / Cyberpunk 2077)*
 
 **Cyberware (Body Modifications):**
 Players can install chrome to enhance abilities:
