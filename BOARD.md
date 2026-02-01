@@ -4,8 +4,10 @@
 
 | ID | Type | Title | Priority | Notes |
 |----|------|-------|----------|-------|
-| CM-001 | feature | Docker test agent | high | Log viewer done, agent build failing (npm install killed) |
-| CM-002 | feature | Back Alleys zone (L2-5) | high | First combat zone after tutorial |
+| CM-009 | feature | Combat System Design | high | Guns, melee, cyberware combat |
+| CM-010 | feature | Cyberware System | high | Implants, humanity, slots |
+| CM-001 | feature | Docker test agent | medium | Log viewer done, agent build failing |
+| CM-002 | feature | Back Alleys zone (L2-5) | medium | First combat zone after tutorial |
 
 ## 📋 Backlog
 
