@@ -9,10 +9,13 @@ These documents establish the core principles that guide all design decisions in
 
 - [World & Maps]({{ '/design/maps/' | relative_url }}) — Spatial design, zone structure, player progression
 - [Immortal Hierarchy]({{ '/design/immortals/' | relative_url }}) — Karma system, builder levels, permissions
-- [Combat]({{ '/design/combat/' | relative_url }}) — Fighting mechanics, balance, death *(coming soon)*
-- [Economy]({{ '/design/economy/' | relative_url }}) — Credits, items, scarcity *(coming soon)*
-- [NPCs]({{ '/design/npcs/' | relative_url }}) — Character design, AI behavior *(coming soon)*
+- [Combat]({{ '/design/combat/' | relative_url }}) — Guns, melee, cyberware combat, cover mechanics
+- [Cyberware]({{ '/design/cyberware/' | relative_url }}) — Implants, humanity, installation, ripperdocs
+- [Character Creation]({{ '/design/character-creation/' | relative_url }}) — Origins, roles, point buy system
+- [Skills]({{ '/design/skills/' | relative_url }}) — Cyberpunk skills, advancement, specializations
+- [Economy]({{ '/design/economy/' | relative_url }}) — Eurodollars, markets, ripperdoc pricing
 - [Cyberspace]({{ '/design/cyberspace/' | relative_url }}) — The digital realm mechanics *(coming soon)*
+- [NPCs]({{ '/design/npcs/' | relative_url }}) — Character design, AI behavior *(coming soon)*
 - [Social]({{ '/design/social/' | relative_url }}) — Guilds, factions, reputation *(coming soon)*
 
 ---

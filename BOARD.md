@@ -6,6 +6,9 @@
 |----|------|-------|----------|-------|
 | CM-009 | feature | Combat System Design | high | Guns, melee, cyberware combat |
 | CM-010 | feature | Cyberware System | high | Implants, humanity, slots |
+| CM-011 | feature | Character Creation System | high | Origins, roles, point buy |
+| CM-012 | feature | Skills System | high | Cyberpunk skills, advancement |
+| CM-013 | feature | Economy System | high | Eddies, markets, ripperdocs |
 | CM-001 | feature | Docker test agent | medium | Log viewer done, agent build failing |
 | CM-002 | feature | Back Alleys zone (L2-5) | medium | First combat zone after tutorial |
 
@@ -46,4 +49,4 @@
 - Avoid Cyberpunk 2077 IP (names, locations)
 
 ---
-*Last updated: 2026-02-01*
+*Last updated: 2026-02-02*
