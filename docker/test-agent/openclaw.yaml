@@ -12,6 +12,10 @@ channels: {}
 workspace:
   root: /agent
 
-# Logging
+# Logging - per-session files
 logging:
   level: info
+  sessions:
+    enabled: true
+    dir: /agent/logs
+    format: jsonl

@@ -17,7 +17,7 @@ RUN npm install -g openclaw
 
 # Create agent workspace
 WORKDIR /agent
-RUN mkdir -p /agent/memory /agent/projects
+RUN mkdir -p /agent/memory /agent/projects /agent/logs
 
 # Copy config and workspace files
 COPY openclaw.yaml /agent/openclaw.yaml

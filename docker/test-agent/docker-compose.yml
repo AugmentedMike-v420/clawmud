@@ -13,6 +13,8 @@ services:
     volumes:
       # Persist agent memory between runs
       - ./data/memory:/agent/memory
+      # Session logs (one file per session)
+      - ./data/logs:/agent/logs
       # Mount custom configs if needed
       - ./config:/agent/config:ro
     extra_hosts:
