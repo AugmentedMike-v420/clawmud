@@ -2,25 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  --bg-dark: #0a0a12;
-  --bg-darker: #06060a;
-  --bg-card: #12121a;
-  --bg-card-hover: #1a1a24;
+  --bg-dark: #0d0815;
+  --bg-darker: #08050d;
+  --bg-card: #140d1f;
+  --bg-card-hover: #1a1228;
   
   --neon-cyan: #00f0ff;
   --neon-purple: #bf00ff;
-  --neon-pink: #ff00aa;
+  --neon-pink: #ff2d95;
+  --neon-magenta: #ff00aa;
   --neon-blue: #0066ff;
   
   --text-bright: #ffffff;
   --text-main: #e0e0e8;
-  --text-dim: #8888aa;
-  --text-muted: #555566;
+  --text-dim: #9988bb;
+  --text-muted: #665577;
   
-  --border-glow: rgba(0, 240, 255, 0.3);
-  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-glow: rgba(255, 45, 149, 0.4);
+  --border-cyan: rgba(0, 240, 255, 0.4);
+  --border-subtle: rgba(255, 255, 255, 0.08);
   
-  --gradient-hero: linear-gradient(135deg, rgba(191, 0, 255, 0.4) 0%, rgba(0, 240, 255, 0.2) 50%, rgba(0, 102, 255, 0.3) 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(191, 0, 255, 0.4) 0%, rgba(255, 45, 149, 0.3) 50%, rgba(0, 240, 255, 0.2) 100%);
   --gradient-card: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
   
   --font-display: 'Orbitron', sans-serif;
@@ -209,14 +211,15 @@ nav a:hover {
 }
 
 .btn-primary {
-  background: var(--neon-cyan);
-  color: var(--bg-dark);
-  box-shadow: 0 0 30px rgba(0, 240, 255, 0.4);
+  background: linear-gradient(135deg, var(--neon-pink) 0%, var(--neon-magenta) 100%);
+  color: var(--text-bright);
+  box-shadow: 0 0 30px rgba(255, 45, 149, 0.5);
+  border: none;
 }
 
 .btn-primary:hover {
-  background: var(--text-bright);
-  box-shadow: 0 0 40px rgba(0, 240, 255, 0.6);
+  background: linear-gradient(135deg, var(--neon-magenta) 0%, var(--neon-pink) 100%);
+  box-shadow: 0 0 50px rgba(255, 45, 149, 0.7);
   transform: translateY(-2px);
 }
 
@@ -268,16 +271,43 @@ section {
 
 .feature-card {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-glow);
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: all 0.3s;
+  position: relative;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid var(--neon-pink);
+  border-left: 2px solid var(--neon-pink);
+  border-radius: var(--radius-lg) 0 0 0;
+  pointer-events: none;
+}
+
+.feature-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid var(--neon-cyan);
+  border-right: 2px solid var(--neon-cyan);
+  border-radius: 0 0 var(--radius-lg) 0;
+  pointer-events: none;
 }
 
 .feature-card:hover {
-  border-color: var(--neon-cyan);
+  border-color: var(--neon-pink);
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 240, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 45, 149, 0.2);
 }
 
 .feature-card-image {
