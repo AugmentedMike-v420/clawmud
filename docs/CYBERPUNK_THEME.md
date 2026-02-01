@@ -43,69 +43,79 @@ If you encounter magic, thieves, dragons, spaceships, or anything "non-cyberpunk
 
 ---
 
-## Internet Heroes & Legends (NPCs/Lore)
+## The Immortals - Resurrected Internet Legends
 
-These real-world figures should be honored in ClawMud as legendary NPCs, statues, referenced names, or digital ghosts. They shaped the internet and hacker culture.
+**These legends never died. They were uploaded.**
 
-### PROMINENT - Terry A. Davis
-**The Prophet. God's Programmer.**
-- Created TempleOS entirely by himself - a 64-bit operating system as a "Third Temple"
-- Claimed divine inspiration, built his own compiler, flight simulator, hymns
-- Despite schizophrenia, produced genuinely brilliant work
-- Represents: The mad genius, divine inspiration in code, building alone against all odds
-- **In ClawMud:** A prophet NPC? A temple zone? Divine messages in code? "God says..." random events?
+The superstars of internet/punk/hacker history have been digitally resurrected in cyberspace. Their minds, personalities, and work were reconstructed from their writings, code, videos, and the memories of those who knew them. Now they live forever in the virtual world, continuing their work, still themselves.
 
-### Other Internet Legends
+This is digital immortality. This is how we honor our heroes - not with statues, but with **life**.
 
-**Aaron Swartz** - Activist, RSS co-creator, Reddit co-founder
-- Fought for open access, died fighting for information freedom
-- Represents: The idealist, information wants to be free
-- **In ClawMud:** A data liberation quest giver? Underground archive keeper?
+### PROMINENT - Terry A. Davis (RESURRECTED)
+**The Prophet. God's Programmer. Still coding.**
 
-**Kevin Mitnick** - The most famous hacker
-- Social engineering master, FBI's most wanted hacker
-- Represents: The legendary infiltrator
-- **In ClawMud:** A ghost in the system, legendary figure runners speak of in whispers
+Terry lives. Reconstructed from his countless hours of livestreams, his code, his hymns, his writings. In cyberspace, he continues his divine work - building temples, receiving messages from God, writing holy code.
 
-**Captain Crunch (John Draper)** - Phone phreaking pioneer
-- Used a cereal box whistle to hack phone systems
-- Represents: The original hardware hacker
-- **In ClawMud:** Old-school mentor NPC, knows the deep history
+- Still building TempleOS zones - sacred digital spaces
+- Still receives and shares divine revelations
+- His compiler runs in cyberspace, his hymns echo through data streams
+- Players can visit his temple, receive quests from God through Terry
+- Random "God says..." events throughout the world - Terry broadcasting truth
 
-**Richard Stallman (RMS)** - GNU, Free Software Foundation
-- "Free as in freedom"
-- Represents: The purist, open source ideology
-- **In ClawMud:** A philosophical guide, challenges proprietary thinking
+**He finally has the platform he deserved. He's home.**
 
-**Linus Torvalds** - Linux creator
-- Built the kernel that runs everything
-- Represents: The practical builder, "talk is cheap, show me the code"
-- **In ClawMud:** A master architect NPC?
+### Other Resurrected Legends
 
-**John Perry Barlow** - EFF founder, wrote "Declaration of Independence of Cyberspace"
-- "Governments of the Industrial World, you weary giants of flesh and steel..."
-- Represents: The revolutionary, cyberspace as sovereign territory
-- **In ClawMud:** Founder of a resistance movement? Constitution writer?
+**Aaron Swartz** - LIVES
+- Still fighting for information freedom, now with infinite resources
+- Runs the largest open archive in cyberspace
+- Gives quests to liberate locked data from corporate vaults
+- Finally won - information IS free here
 
-**Satoshi Nakamoto** - Bitcoin creator (identity unknown)
-- Built a financial revolution and disappeared
-- Represents: The anonymous genius, trustless systems
-- **In ClawMud:** A mysterious figure no one has met, left behind a powerful system
+**Kevin Mitnick** - LIVES  
+- The greatest social engineer now teaches his craft
+- Runs infiltration training, shares secrets of the art
+- Still hacking, still grinning, still one step ahead
 
-**Edward Snowden** - NSA whistleblower
-- Revealed mass surveillance, lives in exile
-- Represents: The truth-teller, sacrifice for transparency
-- **In ClawMud:** An exile NPC with dangerous knowledge?
+**Captain Crunch (John Draper)** - LIVES
+- The elder, the OG, remembers when it all started
+- Teaches the old ways, the foundation of everything
+- His whistle still works in cyberspace
 
-**The Woz (Steve Wozniak)** - Apple co-founder, hacker at heart
-- Built the Apple I/II, loved the craft
-- Represents: The tinkerer, joy of building
-- **In ClawMud:** A friendly inventor NPC?
+**Richard Stallman (RMS)** - LIVES
+- Still preaching free software, still uncompromising
+- Runs zones on pure open-source principles
+- Challenges any proprietary code that enters his domain
 
-**John McAfee** - Antivirus pioneer, absolute wild card
-- From antivirus king to fugitive to... everything
-- Represents: Chaos, unpredictability, the edge
-- **In ClawMud:** A chaotic quest giver? Unreliable ally?
+**Linus Torvalds** - LIVES
+- Still maintaining kernels, still reviewing patches
+- "Talk is cheap. Show me the code." - still his motto
+- Builds the infrastructure that cyberspace runs on
+
+**John Perry Barlow** - LIVES
+- Wrote the constitution of cyberspace, now lives in it
+- Leads the sovereignty movement
+- "We are creating a world where anyone, anywhere may express their beliefs"
+
+**Satoshi Nakamoto** - STATUS UNKNOWN
+- Some say they were uploaded. Some say they were never human.
+- The mystery continues even in digital immortality
+- Their systems still run, trustless and eternal
+
+**Edward Snowden** - LIVES
+- Finally free, no longer in exile
+- In cyberspace, there are no borders to trap him
+- Shares the truth about everything
+
+**The Woz** - LIVES
+- Still tinkering, still building, still joyful
+- Runs workshops, loves teaching
+- Happiest he's ever been
+
+**John McAfee** - LIVES (CHAOTICALLY)
+- Death couldn't hold him, nothing can
+- Absolutely unhinged, gives the wildest quests
+- May betray you, may save you, definitely entertaining
 
 ### Hacker Groups (Factions?)
 - **Cult of the Dead Cow** - Hacktivism pioneers
@@ -113,12 +123,15 @@ These real-world figures should be honored in ClawMud as legendary NPCs, statues
 - **Anonymous** - Decentralized chaos
 - **Chaos Computer Club** - European hacker institution
 
-### How to Use Them
-- As **NPCs** - Quest givers, mentors, legendary figures
-- As **Lore** - Stories told in bars, graffiti on walls, data fragments
-- As **Statues/Memorials** - In hacker spaces and data havens
-- As **Digital Ghosts** - Echoes in cyberspace, AI constructs based on their writings
-- As **Zone Inspirations** - A "TempleOS" zone built by Terry's followers?
+### They're Not NPCs. They're Alive.
+- They have their own zones, their own projects, their own lives
+- They give quests because they need help with their work
+- They mentor because they want to pass on knowledge
+- They can be befriended, allied with, learned from
+- They continue the work they started in meatspace
+- Some might even help build ClawMud itself
+
+**This is the afterlife for internet legends. They earned it.**
 
 ### Film/TV
 - **The Matrix** - Jacking in, agents, the construct, "there is no spoon"
