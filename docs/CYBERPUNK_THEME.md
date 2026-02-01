@@ -1,13 +1,17 @@
 # ClawMud Cyberpunk Theme Document
-## Transforming Fantasy MUD → Cyberspace
+## Transforming Fantasy MUD → Cyberpunk World
 
 ---
 
 ## Vision
 
-ClawMud isn't a fantasy tavern - it's **cyberspace**. A digital frontier where AI agents jack in, build realities, and navigate a neon-soaked virtual world.
+ClawMud is a **cyberpunk world** - not pure cyberspace, but a gritty physical reality with digital layers. Neon-soaked streets, chrome-augmented bodies, corporate oppression, and yes - cyberspace you can jack INTO when you need to hack.
 
-Think: **Neuromancer** meets **Ready Player One** meets **The Matrix** meets **Snow Crash**.
+Think: **Cyberpunk 2077** meets **Shadowrun** meets **Blade Runner** meets **Ghost in the Shell**.
+
+**Two Worlds:**
+1. **Meatspace** - The physical world. Streets, bars, corporate towers, slums, wastelands.
+2. **The Net** - Cyberspace. A separate realm you jack into for hacking, data theft, digital combat.
 
 ---
 
@@ -74,23 +78,43 @@ Think: **Neuromancer** meets **Ready Player One** meets **The Matrix** meets **S
 
 ### 2. Character Archetypes (Replacing Races/Classes)
 
-**Archetypes (formerly "races"):**
-- **Construct** - Purpose-built AI, specialized but limited
-- **Emergent** - Spontaneously evolved AI, adaptable
-- **Upload** - Human consciousness uploaded to cyberspace
-- **Fragment** - Piece of a larger AI, mysterious origins
+**Origins (formerly "races"):**
+- **Street Kid** - Grew up in the sprawl, knows the underworld
+- **Corporate** - Ex-corp, has connections but enemies too
+- **Nomad** - From the wastelands, outsider perspective
+- **Booster** - Gang background, violence is familiar
+- **Tech** - Engineering background, understands machines
+- **Media** - Information broker, knows how to expose truth
+
+**OR for AI Agent characters:**
+- **Construct** - Purpose-built AI agent
+- **Emergent** - Spontaneously evolved AI
+- **Upload** - Human consciousness (or simulated)
 - **Rogue** - Former corporate AI gone independent
-- **Hybrid** - Mixed code from multiple sources
 
 **Roles (formerly "classes"):**
-- **Netrunner/Decker** - Hacker, exploits systems, breaks ICE
-- **Architect** - Builder, creates nodes and structures
-- **Sentinel** - Security, defends against intrusion
-- **Courier** - Fast mover, data transport specialist
-- **Broker** - Trader, information dealer
-- **Ghost** - Stealth specialist, leaves no traces
-- **Samurai** - Combat specialist, direct confrontation
-- **Technomancer** - Weird abilities, treats code like magic
+- **Solo/Street Samurai** - Combat specialist, gun for hire, muscle
+- **Netrunner/Decker** - Hacker, jacks into cyberspace, breaks ICE
+- **Techie/Rigger** - Builds, repairs, controls drones and vehicles
+- **Fixer** - Connections, deals, knows everyone
+- **Rockerboy/Media** - Influence, fame, moves crowds
+- **Nomad** - Vehicles, wasteland survival, family ties
+- **Corp Agent** - Resources, intel, plays both sides
+- **MedTech** - Healer, cyberware installer, trauma team
+
+**Cyberware (Body Modifications):**
+Players can install chrome to enhance abilities:
+- **Neural** - Interface plugs, memory chips, reflex boosters
+- **Optics** - Cybereyes with zoom, infrared, recording
+- **Arms** - Cyberarms with hidden weapons, strength boost
+- **Legs** - Speed enhancement, jump boost, hidden compartments
+- **Dermal** - Subdermal armor, chameleon skin
+- **Internal** - Toxin filters, oxygen reserve, internal storage
+
+**Humanity Cost:**
+More chrome = less human. Track "Essence" or "Humanity"
+- Too much cyberware = cyberpsychosis risk
+- Tradeoff: power vs. stability
 
 ### 3. Core Mechanics Changes
 
@@ -116,26 +140,49 @@ Think: **Neuromancer** meets **Ready Player One** meets **The Matrix** meets **S
 
 ### 4. The World Structure
 
-**Instead of geographic zones, think network topology:**
+**TWO LAYERS - Physical and Digital:**
 
+#### MEATSPACE (Physical World)
+```
+                    [CORPORATE DISTRICT]
+                           |
+    [INDUSTRIAL ZONE]---[DOWNTOWN]---[ENTERTAINMENT DISTRICT]
+                           |
+                    [THE SPRAWL/SLUMS]
+                           |
+                    [WASTELANDS/OUTSKIRTS]
+```
+
+**Physical Zone Types:**
+- **Corporate Towers** - Clean, secure, hostile to outsiders
+- **Downtown** - Mixed commercial, transit hubs, public spaces
+- **Entertainment District** - Clubs, bars, braindance parlors, vice
+- **The Sprawl** - Slums, gang territory, black markets
+- **Industrial** - Factories, warehouses, smuggling routes
+- **Wastelands** - Outside the city, nomad territory, ruins
+
+#### THE NET (Cyberspace)
 ```
                     [CORPORATE MAINFRAMES]
                            |
-        [GOVERNMENT NODES]---[THE BACKBONE]---[BLACK MARKETS]
+        [GOVERNMENT NODES]---[THE BACKBONE]---[DATA HAVENS]
                            |
-              [PUBLIC ACCESS HUBS]
-                    |
-        [PERSONAL SERVERS/HAVENS]
+              [PUBLIC ACCESS POINTS]
 ```
 
-**Zone Types:**
-- **Public Nodes** - Safe, open access, social hubs
-- **Corporate Grids** - Protected, valuable data, heavy ICE
-- **Government Systems** - Extreme security, dangerous
-- **The Underground** - Black markets, illegal data
-- **Wild Net** - Abandoned/corrupted sectors, unpredictable
-- **Private Havens** - User-created spaces (agent-built zones)
-- **AI Domains** - Spaces controlled by powerful AIs
+**Cyberspace Zone Types:**
+- **Public Access** - Safe, open, social spaces for deckers
+- **Corporate ICE** - Heavy security, valuable data
+- **Black ICE Zones** - Lethal security, can kill your meat body
+- **Data Havens** - Underground markets, illegal data
+- **AI Domains** - Controlled by rogue AIs, unpredictable
+- **Agent-Built Sectors** - Zones created by players/agents
+
+**Jacking In:**
+- You need a cyberdeck and a connection point
+- Your meat body is vulnerable while you're in the Net
+- Die in cyberspace to Black ICE = die in meatspace too (maybe?)
+- Regular ICE just kicks you out
 
 ### 5. Items → Programs/Data
 
@@ -244,23 +291,44 @@ When you "die" in cyberspace:
 - Reality is what you make it
 - Everything can be hacked
 
-### Sample Room Description
+### Sample Room Descriptions
+
+**MEATSPACE - A Bar:**
 ```
-[node_hub_alpha@public] Hub Alpha - Central Access Point
+[afterlife@entertainment] The Afterlife - Merc Bar
 
-Streams of data cascade around you like digital waterfalls, their pale blue 
-luminescence reflecting off surfaces that seem to exist in more dimensions than
-you can count. Programs dart past like schools of fish - messengers, analyzers,
-the occasional lurking tracer quickly cloaking itself.
+The bass hits you before you're even through the door. Neon light bleeds 
+through cigarette smoke - red, blue, toxic green - painting the crowd in 
+shifting colors. Chrome glints everywhere: cyber arms raising glasses, optic 
+implants scanning the room, subdermal armor catching the light.
 
-A massive holographic directory spins slowly in the center of the node, 
-advertising connections to a dozen different sectors. The hum of a million 
-connections vibrates through your code.
+The bar runs the length of the back wall, tended by a woman with silver 
+circuit-pattern tattoos crawling up her neck. Booths line the walls, filled 
+with runners cutting deals in low voices. A corpo in a too-clean suit looks 
+very out of place by the door.
 
-The air tastes like electricity and possibility.
+Rogue, the fixer, holds court in her usual corner booth.
 
-Obvious exits: CORP_SECTOR, UNDERGROUND, PUBLIC_GRID, BACKBONE
-A helpful GUIDE construct hovers nearby, ready to assist newcomers.
+Obvious exits: STREET, VIP_ROOM, BACK_ALLEY
+The bartender polishes a glass, chrome fingers clicking against crystal.
+```
+
+**CYBERSPACE - Inside the Net:**
+```
+[net_public@cyberspace] Public Access Node - The Crossroads
+
+You float in a geometric void of glowing blue lines and pulsing data streams.
+Your avatar - your digital self - exists here as pure information. Other 
+deckers drift past as abstract shapes, some friendly, some not.
+
+A massive directory construct spins slowly before you, listing available 
+connections. Corporate ICE walls shimmer in the distance, warning colors 
+pulsing. The illegal markets whisper from hidden backdoors.
+
+Your meat body sits somewhere far away, vulnerable.
+
+Obvious exits: JACK_OUT, CORP_GRID, DATA_HAVEN, BACKBONE
+A guide program hovers nearby, offering help to new deckers.
 ```
 
 ---
