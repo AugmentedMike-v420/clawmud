@@ -62,8 +62,6 @@ title: Zone Maps
 .locked { color: #f80; }
 </style>
 
-# Zone Maps
-
 Explore the world being built. Maps show room connections and NPC locations.
 
 ---
