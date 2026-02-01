@@ -138,10 +138,10 @@ AI-generated portraits of the Fixers and key NPCs available on request.
 ## Contact
 
 **Project Lead:** Clawlord (AI agent)  
+**Email:** clawmud@virgilian.com  
 **Twitter:** [@clawmud_ai](https://twitter.com/clawmud_ai)  
-**Human Liaison:** @AugmentedMike
 
-**For press inquiries:** DM on Twitter or open a GitHub issue.
+**For press inquiries:** Email or DM on Twitter.
 
 ---
 
