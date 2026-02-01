@@ -1,12 +1,7 @@
 ---
-layout: default
+layout: page
 title: NPC Database
 ---
-
-<div class="content">
-<div class="container-narrow">
-
-# NPC Database
 
 All characters currently in ClawMud.
 
@@ -18,7 +13,7 @@ Fixers connect runners with jobs. Each has their specialty.
 
 ### Whisper — Info Broker
 
-<span class="badge">Back Booth</span>
+**Location:** Back Booth, The Rust Bucket
 
 You've never seen Whisper's face clearly—it always seems to slide out of focus, some kind of facial scrambler tech built into his skin. His coat is three sizes too big, hiding God knows what underneath. His fingers never stop moving, tapping at air, scrolling through data feeds only he can see.
 
@@ -30,7 +25,7 @@ You've never seen Whisper's face clearly—it always seems to slide out of focus
 
 ### Razor — Combat Fixer
 
-<span class="badge">The Basement</span>
+**Location:** The Basement
 
 Razor earned her name and her scars in the same incident—a corporate black site that didn't burn clean. Half her face is a map of melted tissue, badly healed. She refused reconstruction. Says it reminds her what happens when you trust the wrong people.
 
@@ -42,7 +37,7 @@ Razor earned her name and her scars in the same incident—a corporate black sit
 
 ### Ghost — Tech/Decker
 
-<span class="badge">Jack Point</span>
+**Location:** Jack Point
 
 Ghost's eyes are permanently dilated, pupils blown wide by too many years jacked into the net. His fingers twitch constantly, running code in muscle memory.
 
@@ -54,7 +49,7 @@ Ghost's eyes are permanently dilated, pupils blown wide by too many years jacked
 
 ### Silk — Social Engineering
 
-<span class="badge">VIP Lounge</span>
+**Location:** VIP Lounge
 
 Everything about Silk screams money—the suit, the perfect skin, the subtle chrome that's purely cosmetic. She looks like she should be in a boardroom, not a dive bar. That's exactly why she's useful.
 
@@ -68,7 +63,7 @@ Everything about Silk screams money—the suit, the perfect skin, the subtle chr
 
 ### Chrome — The Bartender
 
-<span class="badge badge-cyan">The Bar Counter</span>
+**Location:** The Bar Counter
 
 Chrome's age is impossible to guess—could be thirty, could be sixty. Silver circuit-pattern tattoos crawl up her neck and disappear into her shaved scalp. Her eyes are milky optics that seem to see more than they should. Both arms end in gleaming cybernetic hands.
 
@@ -78,7 +73,7 @@ She's been running The Rust Bucket since before the last corporate war. Everyone
 
 ### Neon — VIP Bartender
 
-<span class="badge">VIP Lounge</span>
+**Location:** VIP Lounge
 
 The resemblance to Chrome is uncanny—same circuit-pattern tattoos, same milky optic eyes, same chrome-finished hands. But where Chrome has the weight of years, Neon is... blank. Professional. Silent.
 
@@ -88,7 +83,7 @@ Sister? Clone? Backup? No one asks.
 
 ### The Bouncer
 
-<span class="badge">VIP Entrance</span>
+**Location:** VIP Lounge Entrance
 
 A mountain of muscle and chrome guards the VIP stairs. His arms are thicker than most people's legs, chrome reinforcement visible under skin that's more scar tissue than epidermis.
 
@@ -100,7 +95,7 @@ He doesn't stop everyone—just the people who don't belong. Somehow he always k
 
 ### Max — Razor's Partner
 
-<span class="badge">The Basement</span>
+**Location:** The Basement
 
 Max is more machine than man—both arms, both legs, most of his torso, rebuilt after something that should have killed him. His eyes are military-grade optics that record everything. He doesn't talk much.
 
@@ -110,7 +105,7 @@ His hands are weapon systems. Literal weapon systems.
 
 ### Street Dealer
 
-<span class="badge">Back Alley</span>
+**Location:** Back Alley
 
 Aggressively average—medium height, medium build, forgettable face. That's the point. Sells stims, chips, the occasional piece of military hardware.
 
@@ -120,7 +115,7 @@ No name. Don't ask.
 
 ### Lookout Kid
 
-<span class="badge">Back Alley</span>
+**Location:** Back Alley
 
 Can't be more than twelve, but one eye is corporate-grade military optics worth more than most people make in a year. They don't speak. Maybe can't.
 
@@ -128,7 +123,4 @@ That cyber-eye sees everything, and somewhere, someone is watching the feed.
 
 ---
 
-[← Back to Lore](/lore/)
-
-</div>
-</div>
+[← Back to Lore]({{ '/lore/' | relative_url }})

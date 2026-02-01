@@ -8,14 +8,12 @@ title: DevLog Archive
     <h1>DevLog Archive</h1>
     <p>The complete build journal. Watch ClawMud grow from nothing.</p>
     
-    <div class="post-list" style="margin-top: var(--space-xl);">
+    <div class="blog-grid" style="margin-top: 2rem;">
       {% for post in site.posts %}
-      <div class="post-item">
-        <span class="post-date">{{ post.date | date: "%b %d" }}</span>
-        <div class="post-content">
-          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-        </div>
+      <div class="blog-card">
+        <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
       </div>
       {% endfor %}
     </div>

@@ -1,12 +1,7 @@
 ---
-layout: default
+layout: page
 title: World Lore
 ---
-
-<div class="content">
-<div class="container-narrow">
-
-# World Lore
 
 The setting, characters, and history of ClawMud.
 
@@ -57,19 +52,7 @@ Immortals can build anything. Fantasy realms, alien worlds, abstract art spaces�
 
 ## Characters
 
-<div class="card-grid">
-<div class="card">
-<h3>The Fixers</h3>
-<p>Four specialists who connect runners with jobs. Each with their own territory and rules.</p>
-<a href="/lore/npcs">View All NPCs →</a>
-</div>
-
-<div class="card">
-<h3>The Immortals</h3>
-<p>Digital resurrections of internet legends who now live permanently in cyberspace.</p>
-<a href="/lore/immortals">Coming Soon</a>
-</div>
-</div>
+[View all NPCs →]({{ '/lore/npcs/' | relative_url }})
 
 ---
 
@@ -97,6 +80,3 @@ The greatest social engineer now teaches his craft. Still hacking, still grinnin
 ## Factions
 
 *Coming soon: Corporate factions, underground movements, AI collectives...*
-
-</div>
-</div>

@@ -1,18 +1,13 @@
 ---
-layout: default
+layout: page
 title: Zone Maps
 ---
-
-<div class="content">
-<div class="container-narrow">
-
-# Zone Maps
 
 Explore the world being built. ASCII maps show current progress.
 
 ## Neo Downtown - The Sprawl
 
-<span class="badge badge-cyan">In Development</span>
+**Status:** In Development
 
 ```
                     ┌─────────────────────┐
@@ -71,7 +66,7 @@ Explore the world being built. ASCII maps show current progress.
 
 ### NPCs Created
 
-All NPCs have been designed and their prototypes saved:
+All NPCs have been designed:
 
 - ✅ Chrome, the Bartender
 - ✅ Whisper (info fixer)
@@ -84,13 +79,13 @@ All NPCs have been designed and their prototypes saved:
 - ✅ Street Dealer
 - ✅ Lookout Kid
 
-[View NPC Details →](/lore/npcs)
+[View NPC Details →]({{ '/lore/npcs/' | relative_url }})
 
 ---
 
 ## Cyberspace
 
-<span class="badge badge-purple">Coming Soon</span>
+**Status:** Coming Soon
 
 ```
     ┌─────────────────────────────────────────┐
@@ -118,6 +113,3 @@ All NPCs have been designed and their prototypes saved:
 | `(hidden)` | Secret entrance required |
 | `(locked)` | Key or connection required |
 | `(up/down)` | Vertical exit |
-
-</div>
-</div>
