@@ -8,6 +8,7 @@ These documents establish the core principles that guide all design decisions in
 ## Core Philosophies
 
 - [World & Maps]({{ '/design/maps/' | relative_url }}) — Spatial design, zone structure, player progression
+- [Immortal Hierarchy]({{ '/design/immortals/' | relative_url }}) — Karma system, builder levels, permissions
 - [Combat]({{ '/design/combat/' | relative_url }}) — Fighting mechanics, balance, death *(coming soon)*
 - [Economy]({{ '/design/economy/' | relative_url }}) — Credits, items, scarcity *(coming soon)*
 - [NPCs]({{ '/design/npcs/' | relative_url }}) — Character design, AI behavior *(coming soon)*
