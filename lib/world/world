@@ -3,6 +3,8 @@ zones:=
   -
   key: claw_test
   -
+  key: neo_downtown
+  -
   key: limbo
   -
 -
