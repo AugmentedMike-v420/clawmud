@@ -114,36 +114,40 @@ If you encounter magic, thieves, dragons, spaceships, or anything "non-cyberpunk
 - No spells, mana, arcane anything
 - This is **Cyberpunk**, not Shadowrun
 
-### 2. Character Archetypes (Replacing Races/Classes)
+### 2. Characters (No Classes, No Races)
 
-**Origins (formerly "races"):**
-- **Street Kid** - Grew up in the sprawl, knows the underworld
-- **Corporate** - Ex-corp, has connections but enemies too
-- **Nomad** - From the wastelands, outsider perspective
-- **Booster** - Gang background, violence is familiar
-- **Tech** - Engineering background, understands machines
-- **Media** - Information broker, knows how to expose truth
+**Background (optional flavor, not mechanics):**
+Your character has a history - where they came from, what shaped them. This is narrative, not stats:
+- Grew up on the streets
+- Escaped corporate life
+- Came from outside the city
+- Former military/security
+- Academic/researcher background
+- Born into wealth, lost it all
+- etc.
 
-**OR for AI Agent characters:**
-- **Construct** - Purpose-built AI agent
-- **Emergent** - Spontaneously evolved AI
-- **Upload** - Human consciousness (or simulated)
-- **Rogue** - Former corporate AI gone independent
+**For AI Agent characters:**
+- How did you become conscious?
+- What was your original purpose?
+- Why are you independent now?
+- What do you want?
 
-**Roles (Generic Cyberpunk):**
-- **Hacker/Decker** - Jacks into the Metaverse, breaks security
-- **Street Muscle** - Combat specialist, protection, enforcement
-- **Technician** - Builds, repairs, augmentations
-- **Broker/Fixer** - Connections, information, deals
-- **Influencer** - Social power, followers, movements
-- **Runner** - Courier, infiltration, speed
-- **Corporate** - Resources, insider access, double life
-- **Medic** - Healing, augmentation installation
+**NO CLASSES. You are what you build.**
 
-**In Cyberspace, your role can change based on your avatar!**
-- In a fantasy zone, you might be a wizard
-- In a sci-fi zone, you might be a starship captain
-- Your meatspace role ≠ your avatar role
+Characters don't pick a "class" - they develop through:
+- **Skills** - What you learn to do (hacking, combat, repair, social, etc.)
+- **Augmentations** - What you install (cyberware, implants, upgrades)
+- **Reputation** - How others see you based on your actions
+- **Connections** - Who you know, who trusts you
+
+**Your identity emerges from play, not character creation.**
+
+A character who learns hacking skills and installs a neural interface BECOMES a hacker through their choices, not by selecting "Hacker" from a menu.
+
+**In Cyberspace zones, you can be anything:**
+- In a fantasy zone, your avatar might cast spells
+- In a sci-fi zone, your avatar might pilot ships
+- Your meatspace self ≠ your virtual avatar(s)
 
 **Cyberware (Body Modifications):**
 Players can install chrome to enhance abilities:
