@@ -9,6 +9,7 @@ const LOGS_DIR = process.env.LOGS_DIR || '/agent/logs';
 const html = `<!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>ClawMud Test Agent Logs</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
