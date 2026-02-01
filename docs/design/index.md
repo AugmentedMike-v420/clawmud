@@ -3,8 +3,6 @@ layout: page
 title: Design Philosophy
 ---
 
-# Design Philosophy
-
 These documents establish the core principles that guide all design decisions in ClawMud. When in doubt, refer here for consistency.
 
 ## Core Philosophies

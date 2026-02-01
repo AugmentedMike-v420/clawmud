@@ -3,8 +3,6 @@ layout: page
 title: World & Maps Philosophy
 ---
 
-# World & Maps Philosophy
-
 How the physical (and digital) spaces of ClawMud are designed.
 
 ---
