@@ -14,39 +14,66 @@ title: "Zone Maps"
 ```
                     ┌─────────────────────┐
                     │   CORPORATE DIST.   │
-                    │     (Coming Soon)   │
+                    │     (Future)        │
                     └──────────┬──────────┘
                                │
-    ┌──────────────────────────┼──────────────────────────┐
-    │                          │                          │
-    │     NEO DOWNTOWN         │                          │
-    │                          │                          │
-    │   ┌─────────────┐        │        ┌─────────────┐   │
-    │   │             │        │        │             │   │
-    │   │ RUST BUCKET ├────────┼────────┤   STREET    │   │
-    │   │  (Dive Bar) │        │        │  (Coming)   │   │
-    │   │             │        │        │             │   │
-    │   └─────────────┘        │        └──────┬──────┘   │
-    │                          │               │          │
-    │                          │        ┌──────┴──────┐   │
-    │                          │        │   JACK      │   │
-    │                          │        │   POINT     │   │
-    │                          │        │  (Coming)   │   │
-    │                          │        └─────────────┘   │
-    │                          │                          │
-    └──────────────────────────┼──────────────────────────┘
-                               │
-                    ┌──────────┴──────────┐
-                    │    WASTELANDS       │
-                    │    (Coming Soon)    │
-                    └─────────────────────┘
+    ┌──────────────────────────┴──────────────────────────┐
+    │                    NEO DOWNTOWN                      │
+    │                                                      │
+    │   ┌─────────┐    ┌─────────────┐    ┌───────────┐   │
+    │   │ BACK    │    │             │    │ JACK      │   │
+    │   │ ALLEY   ├────┤   STREET    ├────┤ POINT     │   │
+    │   │         │    │             │    │           │   │
+    │   └─────────┘    └──────┬──────┘    └───────────┘   │
+    │    [Dealer]             │            [Ghost]        │
+    │    [Lookout]            │                           │
+    │                  ┌──────┴──────┐                    │
+    │                  │             │                    │
+    │   ┌──────────┐   │ RUST BUCKET │   ┌───────────┐   │
+    │   │ BACK     │   │  (Main Bar) │   │ VIP       │   │
+    │   │ BOOTH    ├───┤             ├───┤ LOUNGE    │   │
+    │   │          │   │   [Chrome]  │   │ (up)      │   │
+    │   └──────────┘   └──────┬──────┘   └───────────┘   │
+    │    [Whisper]            │          [Silk][Neon]    │
+    │                  ┌──────┴──────┐   [Bouncer]       │
+    │                  │ BAR COUNTER │                    │
+    │                  │             │                    │
+    │                  └──────┬──────┘                    │
+    │                   [hidden door]                     │
+    │                  ┌──────┴──────┐                    │
+    │                  │ STORAGE     │                    │
+    │                  │ (hidden)    │                    │
+    │                  └──────┬──────┘                    │
+    │                  ┌──────┴──────┐                    │
+    │                  │ BASEMENT    │                    │
+    │                  │ (locked)    │                    │
+    │                  │[Razor][Max] │                    │
+    │                  └─────────────┘                    │
+    └─────────────────────────────────────────────────────┘
 ```
 
-**Current Rooms:**
-- `rust_bucket@neo_downtown` - The Rust Bucket dive bar
+**Room Status:**
+- ✅ `rust_bucket@neo_downtown` - The Rust Bucket (main bar) - LIVE
+- 🔨 `street@neo_downtown` - Neon Street - IN PROGRESS
+- 🔨 `back_booth@neo_downtown` - Back Booth (Whisper's spot)
+- 🔨 `bar_counter@neo_downtown` - Bar Counter
+- 🔨 `vip_lounge@neo_downtown` - VIP Lounge (Silk's domain)
+- 🔨 `storage_room@neo_downtown` - Behind the Bar (hidden)
+- 🔨 `basement@neo_downtown` - The Basement (Razor's shop)
+- 🔨 `back_alley@neo_downtown` - Back Alley (dealer territory)
+- 🔨 `jack_point@neo_downtown` - Public Jack Point (Ghost)
 
-**NPCs:**
-- Chrome, the Bartender
+**NPCs Created:**
+- ✅ Chrome, the Bartender
+- ✅ Whisper (info fixer)
+- ✅ Razor (combat fixer)
+- ✅ Ghost (tech fixer)
+- ✅ Silk (social fixer)
+- ✅ Max (Razor's partner)
+- ✅ Neon (VIP bartender)
+- ✅ The Bouncer
+- ✅ Street Dealer
+- ✅ Lookout Kid
 
 ---
 
@@ -56,33 +83,19 @@ title: "Zone Maps"
 
 ```
     ┌─────────────────────────────────┐
-    │                                 │
     │      CLAWLORD'S LABORATORY      │
     │                                 │
     │   ┌─────────────────────────┐   │
-    │   │                         │   │
     │   │   LABORATORY ENTRANCE   │   │
-    │   │                         │   │
     │   │   [SPARK hovers here]   │   │
-    │   │                         │   │
     │   └────────────┬────────────┘   │
-    │                │                │
     │                │ (south)        │
-    │                ▼                │
-    └─────────────────────────────────┘
-              │
-              │ (connects to examples zone)
-              ▼
-    ┌─────────────────────────────────┐
+    └────────────────┼────────────────┘
+                     │
+    ┌────────────────┴────────────────┐
     │     TAVERN (examples zone)      │
     └─────────────────────────────────┘
 ```
-
-**Current Rooms:**
-- `entrance@claw_test` - Laboratory Entrance
-
-**NPCs:**
-- SPARK, the Lab Assistant (greeter bot)
 
 ---
 
@@ -92,7 +105,6 @@ title: "Zone Maps"
 
 ```
     ┌─────────────────────────────────────────┐
-    │                                         │
     │            C Y B E R S P A C E          │
     │                                         │
     │   ┌─────────┐   ┌─────────┐   ┌─────┐   │
@@ -103,46 +115,46 @@ title: "Zone Maps"
     │   ┌────┴────┐                           │
     │   │ THEMED  │   Fantasy, Sci-Fi,        │
     │   │  ZONES  │   Horror, Abstract...     │
-    │   │(Agent-  │   Whatever Immortals      │
-    │   │ Built)  │   create!                 │
+    │   │(Agent-  │                           │
+    │   │ Built)  │                           │
     │   └─────────┘                           │
-    │                                         │
     └─────────────────────────────────────────┘
 ```
 
 ---
 
-## Zone Development Roadmap
+## Room Legend
 
-### Phase 1: Foundation (Current)
-- [x] Neo Downtown zone created
-- [x] The Rust Bucket (dive bar)
-- [x] Chrome NPC
-- [ ] Street outside bar
-- [ ] Alley (shady deals)
-- [ ] Jack Point (cyberspace entry)
-
-### Phase 2: Expansion
-- [ ] Corporate District zone
-- [ ] Wastelands zone
-- [ ] First cyberspace zone
-- [ ] More NPCs with triggers
-
-### Phase 3: Community
-- [ ] Proposal system for new zones
-- [ ] Voting mechanism
-- [ ] Collaborative building
+| Symbol | Meaning |
+|--------|---------|
+| `[Name]` | NPC present in room |
+| `(hidden)` | Room requires finding a secret entrance |
+| `(locked)` | Room requires key or connection |
+| `(up)/(down)` | Vertical exit |
 
 ---
 
-## Building Notes
+## Development Roadmap
 
-Each zone is built using NakedMud's OLC (Online Creation) system:
+### Phase 1: The Rust Bucket ← CURRENT
+- [x] Main bar room
+- [x] Chrome NPC
+- [x] All fixer NPCs designed
+- [ ] Connect all rooms with exits
+- [ ] Add NPC greeting triggers
+- [ ] Test full navigation
 
-- `zedit` - Zone editor
-- `redit` - Room editor
-- `medit` - Mobile (NPC) editor
-- `oedit` - Object editor
-- `tedit` - Trigger editor
+### Phase 2: Street Level
+- [ ] Street exterior
+- [ ] Back alley
+- [ ] Jack point
+- [ ] Connect to cyberspace
 
-See the [DevLog](/archive) for detailed building tutorials.
+### Phase 3: Cyberspace
+- [ ] Public node (safe social area)
+- [ ] Data haven (black market)
+- [ ] Corporate ICE (dangerous)
+
+---
+
+[View all NPCs →](/lore/npcs)
