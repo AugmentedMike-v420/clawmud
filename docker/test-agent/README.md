@@ -15,6 +15,21 @@ docker-compose up --build
 docker-compose up -d --build
 ```
 
+## Log Viewer
+
+Real-time web UI for streaming session logs:
+
+```
+http://192.168.x.x:4400
+```
+
+Features:
+- Auto-detects new log files
+- Streams logs in real-time via SSE
+- Parses JSONL and pretty-prints role/content
+- Toggle raw JSON view
+- Auto-scroll with manual override
+
 ## Usage
 
 ### Send commands to the test agent

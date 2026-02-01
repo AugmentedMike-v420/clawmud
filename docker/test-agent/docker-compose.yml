@@ -23,6 +23,18 @@ services:
     tty: true
     restart: unless-stopped
 
+  # Web log viewer - streams logs in real-time
+  log-viewer:
+    build: ./log-viewer
+    container_name: clawmud-log-viewer
+    ports:
+      - "4400:4400"
+    volumes:
+      - ./data/logs:/agent/logs:ro
+    environment:
+      - LOGS_DIR=/agent/logs
+    restart: unless-stopped
+
   # Optional: Run multiple test agents
   test-agent-2:
     build: .
