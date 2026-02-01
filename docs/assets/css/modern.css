@@ -235,6 +235,24 @@ nav a:hover {
   box-shadow: 0 0 20px rgba(191, 0, 255, 0.3);
 }
 
+.btn-glow {
+  background: linear-gradient(135deg, var(--neon-cyan) 0%, #00cccc 100%);
+  color: #000;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+  animation: btn-pulse 2s ease-in-out infinite;
+}
+
+.btn-glow:hover {
+  background: linear-gradient(135deg, #00ffff 0%, var(--neon-cyan) 100%);
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.9);
+  transform: translateY(-2px) scale(1.02);
+}
+
+@keyframes btn-pulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(0, 255, 255, 0.6); }
+  50% { box-shadow: 0 0 50px rgba(0, 255, 255, 0.9); }
+}
+
 /* Sections */
 section {
   padding: 6rem 0;

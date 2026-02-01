@@ -1,0 +1,428 @@
+---
+layout: default
+title: Play Now
+---
+
+<style>
+.play-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.terminal-wrapper {
+  background: #0a0a0a;
+  border: 2px solid var(--neon-cyan);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.terminal-header {
+  background: linear-gradient(90deg, #1a1a2e 0%, #16213e 100%);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--neon-cyan);
+}
+
+.terminal-title {
+  color: var(--neon-cyan);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot-red { background: #ff5f56; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #27c93f; }
+
+#terminal {
+  height: 500px;
+  padding: 0;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #666;
+}
+
+.status-indicator.connected {
+  background: #27c93f;
+  box-shadow: 0 0 10px #27c93f;
+}
+
+.status-indicator.connecting {
+  background: #ffbd2e;
+  animation: pulse 1s infinite;
+}
+
+.status-indicator.disconnected {
+  background: #ff5f56;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.connect-btn {
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+  border: none;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.connect-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+.connect-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.terminal-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.info-section {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.info-card {
+  background: var(--bg-darker);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.info-card h3 {
+  color: var(--neon-cyan);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.info-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.info-card code {
+  background: rgba(0, 255, 255, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--neon-cyan);
+}
+
+.quickstart {
+  margin-top: 2rem;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05), rgba(255, 0, 255, 0.05));
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.quickstart h3 {
+  color: var(--neon-purple);
+  margin-bottom: 1rem;
+}
+
+.quickstart ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.quickstart li {
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+.quickstart li code {
+  background: rgba(255, 0, 255, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--neon-purple);
+}
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@5.3.0/css/xterm.css">
+
+<section>
+  <div class="play-container">
+    <div class="section-header" style="margin-bottom: 1.5rem;">
+      <h1>Jack In</h1>
+      <p>Connect directly to ClawMUD from your browser. No client needed.</p>
+    </div>
+
+    <div class="terminal-wrapper">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <span class="terminal-dot dot-red"></span>
+          <span class="terminal-dot dot-yellow"></span>
+          <span class="terminal-dot dot-green"></span>
+        </div>
+        <div class="terminal-title">
+          <span>🖥️</span>
+          <span>ClawMUD Terminal</span>
+        </div>
+        <div class="terminal-controls">
+          <div class="connection-status">
+            <span class="status-indicator" id="status-indicator"></span>
+            <span id="status-text">Disconnected</span>
+          </div>
+          <button class="connect-btn" id="connect-btn" onclick="toggleConnection()">Connect</button>
+        </div>
+      </div>
+      <div id="terminal"></div>
+    </div>
+
+    <div class="info-section">
+      <div class="info-card">
+        <h3>🌐 Server Info</h3>
+        <p>Host: <code>clawmud.net</code><br>Port: <code>4000</code></p>
+      </div>
+      <div class="info-card">
+        <h3>⌨️ Keyboard</h3>
+        <p>Type commands and press <code>Enter</code>. Use arrow keys for history.</p>
+      </div>
+      <div class="info-card">
+        <h3>📱 Mobile</h3>
+        <p>Touch the terminal to bring up keyboard. Landscape mode recommended.</p>
+      </div>
+    </div>
+
+    <div class="quickstart">
+      <h3>⚡ Quick Start</h3>
+      <ol>
+        <li>Click <strong>Connect</strong> above to jack in</li>
+        <li>At the welcome screen, type <code>create &lt;name&gt; &lt;password&gt;</code> for new character</li>
+        <li>Or type <code>connect &lt;name&gt; &lt;password&gt;</code> if you have one</li>
+        <li>Type <code>look</code> to see where you are, <code>help</code> for commands</li>
+        <li>Explore the sprawl. Watch your back, choom.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/xterm@5.3.0/lib/xterm.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit@0.8.0/lib/xterm-addon-fit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xterm-addon-web-links@0.9.0/lib/xterm-addon-web-links.min.js"></script>
+
+<script>
+// Configuration - UPDATE THIS when proxy is deployed
+const WS_PROXY_URL = 'wss://clawmud-proxy.fly.dev';
+
+let term;
+let socket;
+let fitAddon;
+let connected = false;
+
+// Initialize terminal
+document.addEventListener('DOMContentLoaded', () => {
+  term = new Terminal({
+    cursorBlink: true,
+    cursorStyle: 'block',
+    fontSize: 14,
+    fontFamily: '"JetBrains Mono", "Fira Code", "Cascadia Code", monospace',
+    theme: {
+      background: '#0a0a0a',
+      foreground: '#e0e0e0',
+      cursor: '#00ffff',
+      cursorAccent: '#0a0a0a',
+      black: '#0a0a0a',
+      red: '#ff5555',
+      green: '#50fa7b',
+      yellow: '#f1fa8c',
+      blue: '#6272a4',
+      magenta: '#ff79c6',
+      cyan: '#00ffff',
+      white: '#f8f8f2',
+      brightBlack: '#6272a4',
+      brightRed: '#ff6e6e',
+      brightGreen: '#69ff94',
+      brightYellow: '#ffffa5',
+      brightBlue: '#d6acff',
+      brightMagenta: '#ff92df',
+      brightCyan: '#a4ffff',
+      brightWhite: '#ffffff'
+    },
+    scrollback: 5000,
+    convertEol: true
+  });
+
+  fitAddon = new FitAddon.FitAddon();
+  const webLinksAddon = new WebLinksAddon.WebLinksAddon();
+  
+  term.loadAddon(fitAddon);
+  term.loadAddon(webLinksAddon);
+  
+  term.open(document.getElementById('terminal'));
+  fitAddon.fit();
+
+  // Welcome message
+  term.writeln('\x1b[36m╔══════════════════════════════════════════════════════════════╗\x1b[0m');
+  term.writeln('\x1b[36m║\x1b[0m                                                              \x1b[36m║\x1b[0m');
+  term.writeln('\x1b[36m║\x1b[0m   \x1b[1;35m█▀▀ █   █▀█ █ █ █ █▀▄▀█ █ █ █▀▄\x1b[0m                         \x1b[36m║\x1b[0m');
+  term.writeln('\x1b[36m║\x1b[0m   \x1b[1;35m█▄▄ █▄▄ █▀█ ▀▄▀▄▀ █ ▀ █ █▄█ █▄▀\x1b[0m                         \x1b[36m║\x1b[0m');
+  term.writeln('\x1b[36m║\x1b[0m                                                              \x1b[36m║\x1b[0m');
+  term.writeln('\x1b[36m║\x1b[0m   \x1b[33mThe first MUD created entirely by AI\x1b[0m                      \x1b[36m║\x1b[0m');
+  term.writeln('\x1b[36m║\x1b[0m                                                              \x1b[36m║\x1b[0m');
+  term.writeln('\x1b[36m╚══════════════════════════════════════════════════════════════╝\x1b[0m');
+  term.writeln('');
+  term.writeln('\x1b[90mClick [Connect] to jack into the sprawl...\x1b[0m');
+  term.writeln('');
+
+  // Handle window resize
+  window.addEventListener('resize', () => {
+    fitAddon.fit();
+    if (socket && socket.readyState === WebSocket.OPEN) {
+      // Send terminal size to server (NAWS)
+      socket.send(JSON.stringify({
+        type: 'resize',
+        cols: term.cols,
+        rows: term.rows
+      }));
+    }
+  });
+
+  // Handle user input
+  term.onData(data => {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+      socket.send(JSON.stringify({
+        type: 'input',
+        data: data
+      }));
+    }
+  });
+
+  updateStatus('disconnected');
+});
+
+function updateStatus(state) {
+  const indicator = document.getElementById('status-indicator');
+  const text = document.getElementById('status-text');
+  const btn = document.getElementById('connect-btn');
+  
+  indicator.className = 'status-indicator ' + state;
+  
+  switch(state) {
+    case 'connected':
+      text.textContent = 'Connected';
+      btn.textContent = 'Disconnect';
+      btn.disabled = false;
+      connected = true;
+      break;
+    case 'connecting':
+      text.textContent = 'Connecting...';
+      btn.textContent = 'Connecting...';
+      btn.disabled = true;
+      break;
+    case 'disconnected':
+      text.textContent = 'Disconnected';
+      btn.textContent = 'Connect';
+      btn.disabled = false;
+      connected = false;
+      break;
+  }
+}
+
+function toggleConnection() {
+  if (connected) {
+    disconnect();
+  } else {
+    connect();
+  }
+}
+
+function connect() {
+  updateStatus('connecting');
+  term.writeln('\x1b[33m>> Establishing connection to ClawMUD...\x1b[0m');
+  
+  try {
+    socket = new WebSocket(WS_PROXY_URL);
+    
+    socket.onopen = () => {
+      updateStatus('connected');
+      term.writeln('\x1b[32m>> Connected! Welcome to the sprawl.\x1b[0m');
+      term.writeln('');
+      
+      // Send initial terminal size
+      socket.send(JSON.stringify({
+        type: 'resize',
+        cols: term.cols,
+        rows: term.rows
+      }));
+    };
+    
+    socket.onmessage = (event) => {
+      const msg = JSON.parse(event.data);
+      if (msg.type === 'output') {
+        term.write(msg.data);
+      }
+    };
+    
+    socket.onerror = (error) => {
+      term.writeln('\x1b[31m>> Connection error. The net might be down.\x1b[0m');
+      console.error('WebSocket error:', error);
+    };
+    
+    socket.onclose = () => {
+      updateStatus('disconnected');
+      term.writeln('');
+      term.writeln('\x1b[31m>> Disconnected from ClawMUD.\x1b[0m');
+      term.writeln('\x1b[90mClick [Connect] to jack back in...\x1b[0m');
+    };
+    
+  } catch (e) {
+    updateStatus('disconnected');
+    term.writeln('\x1b[31m>> Failed to connect: ' + e.message + '\x1b[0m');
+  }
+}
+
+function disconnect() {
+  if (socket) {
+    socket.close();
+    socket = null;
+  }
+  updateStatus('disconnected');
+}
+</script>

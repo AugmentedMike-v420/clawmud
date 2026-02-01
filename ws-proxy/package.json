@@ -1,0 +1,16 @@
+{
+  "name": "clawmud-ws-proxy",
+  "version": "1.0.0",
+  "description": "WebSocket to Telnet proxy for ClawMUD web client",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

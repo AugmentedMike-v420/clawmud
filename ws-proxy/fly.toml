@@ -1,0 +1,29 @@
+# Fly.io configuration for ClawMUD WebSocket Proxy
+# Deploy with: fly launch / fly deploy
+
+app = "clawmud-proxy"
+primary_region = "dfw"  # Dallas - adjust as needed
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  MUD_HOST = "clawmud.net"  # UPDATE: Your MUD server hostname
+  MUD_PORT = "4000"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+  [http_service.concurrency]
+    type = "connections"
+    hard_limit = 100
+    soft_limit = 50
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256
